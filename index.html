@@ -5,20 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Dilton</title>
     <link rel="icon" href="assets/icon.jpg" type="image/x-icon">
 	<style>
-		body {
-			padding: 0%;
-			margin: 0%;
-            background-color: #0495b9;
-		}
+		body {padding: 0%;margin: 0%;background-color: #0495b9;}
         hr{
             width: 60%;
             margin: 15px auto;
+            clear:  left;
             }
         .pattern{
 			content: "";
@@ -59,7 +55,7 @@
             text-align: center;
         }
         p{
-            clear: left;
+            clear:left;
             font-family: 'Raleway', sans-serif;
             color: white;
             font-size: 36px;
@@ -81,8 +77,14 @@
             color: black;
             background-color: white;
         }
-        i:hover{
-            color:white;
+        .project{
+            font-family: 'Roboto Mono', monospace;
+            margin-bottom: 0px;
+        }
+        .subtitle{
+            font-family: 'Nova Mono', monospace;
+            font-size: 25px;
+            margin-top: 5px;
         }
         /* Extra small devices (phones, 600px and down) */
         @media only screen and (max-width: 600px){
@@ -104,6 +106,10 @@
                 margin-right: 0px;;
                 margin-left:5px;
                 padding:5px;
+                border:1px solid white;
+            }
+            hr{
+                margin-top: 10px;
             }
         }
 
@@ -138,7 +144,7 @@
         /* Large devices (laptops/desktops, 992px and up) */
         @media only screen and (min-width: 992px) {
             .head{
-                width: 700px;
+                width: 900px;
                 margin: auto;
             }
             img{
@@ -152,14 +158,28 @@
             h2{
             font-size: 48px;
             text-align: left;
-            margin-top: 60px;
+            margin-top: 30px;
             }
             .pattern{
                 height: 500px;
             }
             p{
-                margin-top: 25px;
+                text-align: center;
+                
             }
+            .head p{
+                font-size: 25px;display:inline;margin:0px;
+            }
+            a{
+                border:0px;
+                margin-right: 0px;
+                            }
+                            a:hover{
+                                transition: 0.7s;
+                            }
+        }
+        .big-dev-connect{
+            font-size: 24px;font-weight: 600;
         }
         /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media only screen and (min-width: 1200px) {
@@ -188,20 +208,25 @@
         <img src="/assets/dilton.jpeg" alt="fhjgjg">
         <h2>Hey there,</h2>
         <h1>I'm Dilton</h1>
+        <p>A tech enthusiast with a knack for all things computers.</p>
     </div>
     
-	<p>A recent CS graduate with a knack for all things computers.</p>
-    <hr>
     <p>Connect with me &#128073
-        <a href="mailto:diltondsouza1@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="color:black"></i> Mail</a>
+        
         <a href="https://www.linkedin.com/in/diltondsouza" ><i class="fa fa-linkedin" aria-hidden="true" style="border: 2px solid blue;background-color: blue;padding:3px;border-radius: 5px;color:white"></i> LinkedIn</a>
         <a href="https://www.github.com/dsouzadilton"><i class="fa fa-github" aria-hidden="true" style="color:black"></i> Github</a>
-    </p>tech stck
-    <br>projects
-    <br>certifications
-    <br>blogs
+        <a href="mailto:diltondsouza1@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="color:black"></i> Mail</a>
+    </p>
+    <hr>
+<p class="project">Some Cool Stuff</p>
+<p class="subtitle">Projects that I built</p>
+<hr>
+<p>Some more cool stuff</p>
+<p>projects that I'm currently working on</p>
+<p>Skills</p>
+<p>skills, technologies and expertise that I learnt/ strengthened through my projects...</p>
+<p>For recruiter eye's only</p>
     <br>virtual resume
-    <br>connect with me
 
 </body>
 
