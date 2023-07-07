@@ -7,13 +7,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
-	<title>Dilton</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Dilton</title>
+    <link rel="icon" href="assets/icon.jpg" type="image/x-icon">
 	<style>
 		body {
 			padding: 0%;
 			margin: 0%;
             background-color: #0495b9;
 		}
+        hr{
+            width: 60%;
+            margin: 15px auto;
+            }
         .pattern{
 			content: "";
 			position: fixed;
@@ -21,7 +27,7 @@
             bottom: 0px;
             height: 300px;
             width: 100%;
-			background:url(wave.svg);
+			background:url(/assets/wave.svg);
 			background-size: cover;
 			background-repeat: no-repeat;
             z-index: -9;
@@ -36,13 +42,13 @@
             border: 5px solid white;
             border-radius: 100%;
             display: block;
-            margin: 0px auto;
+            margin: 0px auto 10px;
         }
         h1{
             color: white;
             font-family: 'Poppins', sans-serif;
             margin: 0px;
-            padding-bottom: 0px;
+            padding: 0px;
             text-align: center;
         }
         h2{
@@ -60,7 +66,24 @@
             margin: 5px;
             text-align: center;
         }
-
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            font-family: 'Raleway', sans-serif;
+            border:2px solid white;
+            padding: 10px;
+            margin-right:10px;
+            border-radius: 10px;
+        } 
+        a:hover{
+            cursor: pointer;
+            color: black;
+            background-color: white;
+        }
+        i:hover{
+            color:white;
+        }
         /* Extra small devices (phones, 600px and down) */
         @media only screen and (max-width: 600px){
             img{
@@ -75,6 +98,9 @@
             }
             p{
                 font-size: 12px;
+            }
+            a{
+                font-size: 10px;
             }
         }
 
@@ -157,12 +183,17 @@
     <div class="pattern"></div>
     <div class="head">
         <img src="/assets/dilton.jpeg" alt="fhjgjg">
-        <h2>Hey there!</h2>
+        <h2>Hey there,</h2>
         <h1>I'm Dilton</h1>
     </div>
     
-	<p>I'm a recent CS graduate with a knack for all things computers.</p>
-    tech stck
+	<p>A recent CS graduate with a knack for all things computers.</p>
+    <hr>
+    <p>Connect with me &#128073
+        <a href="mailto:diltondsouza1@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="color:black"></i> Mail</a>
+        <a href="https://www.linkedin.com/in/diltondsouza" ><i class="fa fa-linkedin" aria-hidden="true" style="border: 2px solid blue;background-color: blue;padding:3px;border-radius: 5px;color:white"></i> LinkedIn</a>
+        <a href="https://www.github.com/dsouzadilton"><i class="fa fa-github" aria-hidden="true" style="color:black"></i> Github</a>
+    </p>tech stck
     <br>projects
     <br>certifications
     <br>blogs
