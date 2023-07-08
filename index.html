@@ -88,20 +88,20 @@
         }
         .skills{
             width:60%;
-            align-items:center;
             margin: auto;
-            max-height: 90px;
-            min-height: 70px;
+            align-items: center;
         }
         .skills img{
-            width:20px;
-            height: 20px;
-            float: left;
-            margin:5px;
+            border: 0px;
+            width:150px;
+            height:150px;
+            display: inline;
+            margin:10px;
         }
         .recruiter{
             width: fit-content;
             margin:auto;
+            height: 50px;
         }
         .recruiter a{
             font-family: 'Raleway', sans-serif;
@@ -168,6 +168,31 @@ div label img {
   box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
 
+
+
+
+
+
+#item-4:checked ~ .cards #song-6, #item-5:checked ~ .cards #song-4, #item-6:checked ~ .cards #song-5 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-4:checked ~ .cards #song-5, #item-5:checked ~ .cards #song-6, #item-6:checked ~ .cards #song-4 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-4:checked ~ .cards #song-4, #item-5:checked ~ .cards #song-5, #item-6:checked ~ .cards #song-6 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+#item-4:checked ~ .cards #song-4 img, #item-5:checked ~ .cards #song-5 img, #item-6:checked ~ .cards #song-6 img {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
 /*Extra Extra smol*/
 @media only screen and (max-width: 350px){
             img{
@@ -341,7 +366,7 @@ div label img {
 <body>
     <div class="pattern"></div>
     <div class="head">
-        <img src="/assets/dilton.jpeg" alt="fhjgjg">
+        <img src="/assets/dilton.jpeg" title="Dilton D'souza">
         <h2>Hey there,</h2>
         <h1>I'm Dilton</h1>
         <p>A tech enthusiast with a knack for all things computers.</p>
@@ -361,16 +386,19 @@ div label img {
         <a href="/assets/Dilton-Resume.pdf" download="Dilton-Resume.pdf">Download Resume <i class="fa fa-download"></i></a>
     </div>
     <hr>
-<p style="font-family: 'Courier New', Courier, monospace;">skills, technologies and expertise that I learnt/ strengthened through my projects...</p>
+<p style="font-family: 'Courier New', Courier, monospace;font-weight: 600;font-size: 37px;margin-bottom: 10px;">KNOWLEDGE STACK</p>
 <div class="skills">
-    <img src="/assets/dilton.jpeg" alt="">
-    <img src="/assets/icon.jpg" alt="">
-    <img src="/assets/dilton.jpeg" alt="">
-    <img src="/assets/icon.jpg" alt="">
-    <img src="/assets/dilton.jpeg" alt="">
-    <img src="/assets/icon.jpg" alt="">
-    <img src="/assets/dilton.jpeg" alt="">
-    <img src="/assets/icon.jpg" alt="">
+    <img src="/assets/techstack/java.png" alt="">
+    <img src="/assets/techstack/python.png" alt="">
+    <img src="/assets/techstack/html.jpg" alt="">
+    <img src="/assets/techstack/css.jpg" alt="">
+    <img src="/assets/techstack/js.png" alt="">
+    <img src="/assets/techstack/php.png" alt="">
+    <img src="/assets/techstack/c.png" alt="">
+    <img src="/assets/techstack/mongo.png" alt="">
+    <img src="/assets/techstack/pgsql.png" alt="">
+    <img src="/assets/techstack/mysql.png" alt="">
+    <img src="/assets/techstack/mongo.png" alt="">
 </div>
 <hr>
 <p class="project">"Some Cool Stuff"</p>
@@ -393,7 +421,26 @@ div label img {
     </div>
   </div>
 <hr>
+<p class="project">"Some More Cool Stuff"</p>
+<p class="subtitle1">Projects that I'm currently working on</p>
 
+<div class="container">
+    <input type="radio" name="slider1" id="item-4" checked>
+    <input type="radio" name="slider1" id="item-5">
+    <input type="radio" name="slider1" id="item-6">
+    <div class="cards">
+      <label class="card" for="item-4" id="song-4">
+        <img src="assets/dilton.jpeg" alt="song">
+      </label>
+      <label class="card" for="item-5" id="song-5">
+        <img src="assets/icon.jpg" alt="song">
+      </label>
+      <label class="card" for="item-6" id="song-6">
+        <img src="assets/wave.svg" alt="song">
+      </label>
+    </div>
+  </div>
+<hr>
 
 </body>
 
