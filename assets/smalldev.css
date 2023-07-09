@@ -1,0 +1,120 @@
+/*Extra Extra smol*/
+@media only screen and (max-width: 350px){
+    img{
+        width: 150px;
+        border: 3px solid white;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 10px;
+    }
+    a{
+        font-size: 8px;
+        margin-right: 0px;;
+        margin-left:2px;
+        padding:2px;
+        border: 0px;
+    }
+    hr{
+        margin-top: 10px;
+    }
+    .subtitle1{
+        font-size: 12px;
+    }
+    .container{
+        height: 270px;
+        width:100%;
+    }
+    .card{
+        width:200px;
+        height: 250px;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (min-width: 350px){
+    img{
+        width: 150px;
+        border: 3px solid white;
+    }
+    h1{
+        font-size: 28px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+    }
+    a{
+        font-size: 12px;
+        margin-right: 0px;
+        margin-left:2px;
+        padding:5px;
+        border:1px solid white;
+    }
+    hr{
+        margin-top: 10px;
+    }
+    .subtitle1{
+        font-size: 14px;
+    }
+    .container{
+        height: 220px;
+        width: 100%;
+    }
+    .card{
+        width:150px;
+        height: 200px;
+    }
+    ul{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    img{
+        margin: 10px auto;
+    }
+    h1{
+        font-size: 72px;
+    }
+    h2{
+        font-size: 48px;
+    }
+    p{
+        font-size: 24px;
+    }      
+}
+@media screen and (max-width: 992px) {
+    ul {
+      display: none;
+    }
+    .content{
+        margin-left: 0px;
+    }
+    
+  }
+
+@media screen and (min-width:992px) {
+    #about{
+        height: 100%;
+    }
+    .recruiter{
+        position: relative;
+        bottom: 0px;
+    }
+    
+}

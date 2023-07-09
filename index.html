@@ -7,441 +7,119 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Poppins:wght@300&family=Raleway:wght@300&family=Roboto+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/smalldev.css">
+    <link rel="stylesheet" href="/assets/largedev.css">
     <title>Dilton</title>
     <link rel="icon" href="assets/icon.jpg" type="image/x-icon">
-	<style>
-		body {padding: 0%;margin: 0%;background-color: #0495b9;overflow-x:hidden;}
-        hr{
-            width: 60%;
-            margin: 15px auto;
-            clear:  left;
-            }
-        .pattern{
-			content: "";
-			position: fixed;
-            left: 0px;
-            bottom: 0px;
-            height: 300px;
-            width: 100%;
-			background:url(/assets/wave.svg);
-			background-size: cover;
-			background-repeat: no-repeat;
-            z-index: -9;
-		}
-        .head{
-            width: 100%;
-            height: fit-content;
-            padding: 10px
-        }
-        img{
-            width: 250px;
-            border: 5px solid white;
-            border-radius: 100%;
-            display: block;
-            margin: 0px auto 10px;
-        }
-        h1{
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            margin: 0px;
-            padding: 0px;
-            text-align: center;
-        }
-        h2{
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            margin:0px;
-            padding: 0px;
-            text-align: center;
-        }
-        p{
-            clear:left;
-            font-family: 'Raleway', sans-serif;
-            color: white;
-            font-size: 36px;
-            text-align: center;
-            margin-top: 0px;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-            font-size: 24px;
-            font-family: 'Raleway', sans-serif;
-            border:2px solid white;
-            padding: 10px;
-            margin-right:10px;
-            border-radius: 10px;
-        } 
-        a:hover{
-            cursor: pointer;
-            color: black;
-            background-color: white;
-        }
-        .project{
-            font-family: 'Roboto Mono', monospace;
-            margin-bottom: 0px;
-        }
-        .subtitle1{
-            font-family: 'Nova Mono', monospace;
-            margin-top: 5px;
-            font-size: 37px;
-        }
-        .skills{
-            width:60%;
-            margin: auto;
-            align-items: center;
-        }
-        .skills img{
-            border: 0px;
-            width:150px;
-            height:150px;
-            display: inline;
-            margin:10px;
-        }
-        .recruiter{
-            width: fit-content;
-            margin:auto;
-            height: 50px;
-        }
-        .recruiter a{
-            font-family: 'Raleway', sans-serif;
-            border-radius: 0px;
-            margin: 5px;
-        }
-        @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
-
-input[type=radio] {
-  display: none;
-}
-
-
-
-.container {
-  width: 100%;
-  border:1px solid white;
-  height: 370px;
-  align-items: center;
-}
-
-.cards {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.card {
-  position: absolute;
-  width: 300px;
-  height: 350px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  transition: transform 0.4s ease;
-  cursor: pointer;
-}
-
-div label img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2 {
-  transform: translatex(-40%) scale(0.8);
-  opacity: 0.4;
-  z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
-  transform: translatex(40%) scale(0.8);
-  opacity: 0.4;
-  z-index: 0;
-}
-
-#item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3 {
-  transform: translatex(0) scale(1);
-  opacity: 1;
-  z-index: 1;
-}
-#item-1:checked ~ .cards #song-1 img, #item-2:checked ~ .cards #song-2 img, #item-3:checked ~ .cards #song-3 img {
-  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-}
-
-
-
-
-
-
-#item-4:checked ~ .cards #song-6, #item-5:checked ~ .cards #song-4, #item-6:checked ~ .cards #song-5 {
-  transform: translatex(-40%) scale(0.8);
-  opacity: 0.4;
-  z-index: 0;
-}
-
-#item-4:checked ~ .cards #song-5, #item-5:checked ~ .cards #song-6, #item-6:checked ~ .cards #song-4 {
-  transform: translatex(40%) scale(0.8);
-  opacity: 0.4;
-  z-index: 0;
-}
-
-#item-4:checked ~ .cards #song-4, #item-5:checked ~ .cards #song-5, #item-6:checked ~ .cards #song-6 {
-  transform: translatex(0) scale(1);
-  opacity: 1;
-  z-index: 1;
-}
-#item-4:checked ~ .cards #song-4 img, #item-5:checked ~ .cards #song-5 img, #item-6:checked ~ .cards #song-6 img {
-  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
-}
-/*Extra Extra smol*/
-@media only screen and (max-width: 350px){
-            img{
-                width: 150px;
-                border: 3px solid white;
-            }
-            h1{
-                font-size: 28px;
-            }
-            h2{
-                font-size: 18px;
-            }
-            p{
-                font-size: 10px;
-            }
-            a{
-                font-size: 8px;
-                margin-right: 0px;;
-                margin-left:2px;
-                padding:2px;
-                border: 0px;
-            }
-            hr{
-                margin-top: 10px;
-            }
-            .subtitle1{
-                font-size: 12px;
-            }
-            .container{
-                height: 270px;
-                width:100%;
-            }
-            .card{
-                width:200px;
-                height: 250px;
-            }
-        }
-        /* Extra small devices (phones, 600px and down) */
-        @media only screen and (max-width: 600px) and (min-width: 350px){
-            img{
-                width: 150px;
-                border: 3px solid white;
-            }
-            h1{
-                font-size: 28px;
-            }
-            h2{
-                font-size: 18px;
-            }
-            p{
-                font-size: 12px;
-            }
-            a{
-                font-size: 12px;
-                margin-right: 0px;;
-                margin-left:2px;
-                padding:5px;
-                border:1px solid white;
-            }
-            hr{
-                margin-top: 10px;
-            }
-            .subtitle1{
-                font-size: 14px;
-            }
-            .container{
-                height: 220px;
-                width: 100%;
-            }
-            .card{
-                width:150px;
-                height: 200px;
-            }
-        }
-
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media only screen and (min-width: 600px) and (max-width: 768px) {
-            img{
-                margin: 10px auto;
-            }
-                h1{
-                    font-size: 72px;
-                }
-                h2{
-                    font-size: 48px;
-                }
-                p{
-                    font-size: 24px;
-                }
-                
-        }
-
-        /* Medium devices (landscape tablets, 768px and up) */
-        @media only screen and (min-width: 769px) and (max-width: 991px) {
-            img{
-                margin: 0 auto;
-            }
-            h1{
-                font-size: 72px;
-            }
-            h2{
-                font-size: 48px;
-            }
-            p{
-                font-size: 24px;
-            }
-            
-        }
-
-        /* Large devices (laptops/desktops, 992px and up) */
-        @media only screen and (min-width: 992px) {
-            .head{
-                width: 900px;
-                margin: auto;
-            }
-            img{
-                float: left;
-                margin-right: 20px;
-            }
-            h1{
-            font-size: 72px;
-            text-align: left;
-            }
-            h2{
-            font-size: 48px;
-            text-align: left;
-            margin-top: 30px;
-            }
-            .pattern{
-                height: 500px;
-            }
-            p{
-                text-align: center;
-                font-size: 24px;
-            }
-            .head p{
-                font-size: 25px;display:inline;margin:0px;
-            }
-            a{
-                
-                margin-right: 0px;
-                            }
-                            a:hover{
-                                transition: 0.7s;
-                            }
-        }
-
-
-
-        /* Extra large devices (large laptops and desktops, 1200px and up) */
-        @media only screen and (min-width: 1200px) {
-            .pattern{
-                    height: 500px;
-                }
-                img{
-                    float: left;
-                }
-                h1{
-                    
-                    font-size: 72px;
-                    text-align: left;
-                }
-                h2{
-                    font-size: 48px;
-                    text-align: left;
-                }
-                
-        }
-	</style>
 </head>
 <body>
     <div class="pattern"></div>
-    <div class="head">
-        <img src="/assets/dilton.jpeg" title="Dilton D'souza">
-        <h2>Hey there,</h2>
-        <h1>I'm Dilton</h1>
-        <p>A tech enthusiast with a knack for all things computers.</p>
-    </div>
-    <div>
-    <p>Connect with me &#128073
-        
-        <a href="https://www.linkedin.com/in/diltondsouza" ><i class="fa fa-linkedin" aria-hidden="true" style="border: 2px solid rgb(20, 122, 255);background-color: rgb(20, 122, 255);padding:3px;border-radius: 5px;color:white"></i> LinkedIn</a>
-        <a href="https://www.github.com/dsouzadilton"><i class="fa fa-github" aria-hidden="true" style="color:black"></i> Github</a>
-        <a href="mailto:diltondsouza1@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="color:black"></i> Mail</a>
-    </p>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#news">Tech Proficiency</a></li>
+        <li><a href="#contact">Cool Stuff</a></li>
+        <li><a href="#project">More Cool Stuff</a></li>
+        <div class="connect">
+            
+        </div>
+    </ul>
+    <div class="content">
+         <section id="about">
+            <div class="head">
+                <img src="/assets/dilton.jpeg" title="Dilton D'souza">
+                <h2>Hello,</h2>
+                <h1>I'm Dilton</h1>
+                <p>A tech enthusiast with a knack for all things computers.</p>
+            </div> 
+            <!--           
+            <div>
+                <p>Connect with me <i class="fa fa-link"></i></p>
+                <p><a href="https://www.linkedin.com/in/diltondsouza" ><i class="fa fa-linkedin" aria-hidden="true" style="border: 2px solid rgb(20, 122, 255);background-color: rgb(20, 122, 255);padding:3px;border-radius: 5px;color:white"></i> LinkedIn</a>
+                    <a href="https://www.github.com/dsouzadilton"><i class="fa fa-github" aria-hidden="true" style="color:black"></i> Github</a></p>
+                    <p>
+                <a href="mailto:diltondsouza1@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="color:black"></i>diltondsouza1@gmail.com</a>
+                </p>
+                
+            </div>
+        -->
+            <div>
+                <p>Connect with me <i class="fa fa-link"></i></p>
+                <p>
+                    
+                    <a href="https://www.linkedin.com/in/diltondsouza" ><i class="fa fa-linkedin" aria-hidden="true" style="border: 2px solid rgb(20, 122, 255);background-color: rgb(20, 122, 255);padding:3px;border-radius: 5px;color:white"></i> LinkedIn</a>
+                    <a href="mailto:diltondsouza1@gmail.com"><i class="fa fa-envelope" aria-hidden="true" style="color:black"></i>diltondsouza1@gmail.com</a>
+                    <a href="https://www.github.com/dsouzadilton"><i class="fa fa-github" aria-hidden="true" style="color:black"></i> Github</a>
+                    
+                </p>
+                
+            </div>
+            <hr>
+            <p style="text-align: justify;padding:10px;margin: 0px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis commodi, molestias officia at modi eius sapiente magni, impedit provident consequuntur vitae mollitia! Magnam autem dolor impedit porro obcaecati vero, nesciunt veniam quidem doloribus quis consectetur totam enim dolorum tempora perferendis voluptatum explicabo rerum facere quo commodi nisi earum odit. Porro aliquid nisi quod reprehenderit voluptatibus,.</p>
+            <div class="recruiter">
+                <p>For recruiter's eye's only</p>
+                <a href="/assets/resume.html">View Virtual Resume</a>
+                <a href="/assets/Dilton-Resume.pdf" download="Dilton-Resume.pdf">Download Resume <i class="fa fa-download"></i></a>
+            </div>
+         </section>
+    
+    <section id="news"></section>
+    <p style="font-family: 'Courier New', Courier, monospace;font-weight: 600;font-size: 37px;margin-bottom: 10px;">MY KNOWLEDGE STACK</p>
+    <div class="skills">
+        <img src="/assets/techstack/java.png" alt="">
+        <img src="/assets/techstack/python.png" alt="">
+        <img src="/assets/techstack/html.jpg" alt="">
+        <img src="/assets/techstack/css.jpg" alt="">
+        <img src="/assets/techstack/js.png" alt="">
+        <img src="/assets/techstack/php.png" alt="">
+        <img src="/assets/techstack/c.png" alt="">
+        <img src="/assets/techstack/mongo.png" alt="">
+        <img src="/assets/techstack/pgsql.png" alt="">
+        <img src="/assets/techstack/mysql.png" alt="">
+        <img src="/assets/techstack/mongo.png" alt="">
     </div>
     <hr>
-    <p>For recruiter's eye's only</p>
-    <div class="recruiter">
-        <a href="/assets/resume.html">View Virtual Resume</a>
-        <a href="/assets/Dilton-Resume.pdf" download="Dilton-Resume.pdf">Download Resume <i class="fa fa-download"></i></a>
+    <p class="project">"Some Cool Stuff"</p>
+    <p class="subtitle1">Projects that I built</p>
+
+    <div class="container">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <div class="cards">
+        <label class="card" for="item-1" id="song-1">
+            <img src="assets/dilton.jpeg" alt="song">
+        </label>
+        <label class="card" for="item-2" id="song-2">
+            <img src="assets/icon.jpg" alt="song">
+        </label>
+        <label class="card" for="item-3" id="song-3">
+            <img src="assets/wave.svg" alt="song">
+        </label>
+        </div>
     </div>
     <hr>
-<p style="font-family: 'Courier New', Courier, monospace;font-weight: 600;font-size: 37px;margin-bottom: 10px;">KNOWLEDGE STACK</p>
-<div class="skills">
-    <img src="/assets/techstack/java.png" alt="">
-    <img src="/assets/techstack/python.png" alt="">
-    <img src="/assets/techstack/html.jpg" alt="">
-    <img src="/assets/techstack/css.jpg" alt="">
-    <img src="/assets/techstack/js.png" alt="">
-    <img src="/assets/techstack/php.png" alt="">
-    <img src="/assets/techstack/c.png" alt="">
-    <img src="/assets/techstack/mongo.png" alt="">
-    <img src="/assets/techstack/pgsql.png" alt="">
-    <img src="/assets/techstack/mysql.png" alt="">
-    <img src="/assets/techstack/mongo.png" alt="">
+    <p class="project">"Some More Cool Stuff"</p>
+    <p class="subtitle1">Projects that I'm currently working on</p>
+
+    <div class="container">
+        <input type="radio" name="slider1" id="item-4" checked>
+        <input type="radio" name="slider1" id="item-5">
+        <input type="radio" name="slider1" id="item-6">
+        <div class="cards">
+        <label class="card" for="item-4" id="song-4">
+            <img src="assets/dilton.jpeg" alt="song">
+        </label>
+        <label class="card" for="item-5" id="song-5">
+            <img src="assets/icon.jpg" alt="song">
+        </label>
+        <label class="card" for="item-6" id="song-6">
+            <img src="assets/wave.svg" alt="song">
+        </label>
+        </div>
+    </div>
+    <hr>
 </div>
-<hr>
-<p class="project">"Some Cool Stuff"</p>
-<p class="subtitle1">Projects that I built</p>
-
-<div class="container">
-    <input type="radio" name="slider" id="item-1" checked>
-    <input type="radio" name="slider" id="item-2">
-    <input type="radio" name="slider" id="item-3">
-    <div class="cards">
-      <label class="card" for="item-1" id="song-1">
-        <img src="assets/dilton.jpeg" alt="song">
-      </label>
-      <label class="card" for="item-2" id="song-2">
-        <img src="assets/icon.jpg" alt="song">
-      </label>
-      <label class="card" for="item-3" id="song-3">
-        <img src="assets/wave.svg" alt="song">
-      </label>
-    </div>
-  </div>
-<hr>
-<p class="project">"Some More Cool Stuff"</p>
-<p class="subtitle1">Projects that I'm currently working on</p>
-
-<div class="container">
-    <input type="radio" name="slider1" id="item-4" checked>
-    <input type="radio" name="slider1" id="item-5">
-    <input type="radio" name="slider1" id="item-6">
-    <div class="cards">
-      <label class="card" for="item-4" id="song-4">
-        <img src="assets/dilton.jpeg" alt="song">
-      </label>
-      <label class="card" for="item-5" id="song-5">
-        <img src="assets/icon.jpg" alt="song">
-      </label>
-      <label class="card" for="item-6" id="song-6">
-        <img src="assets/wave.svg" alt="song">
-      </label>
-    </div>
-  </div>
-<hr>
-
 </body>
-
 </html>
