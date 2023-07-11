@@ -4,7 +4,8 @@
 body {
   padding: 0%;
   margin: 0%;
-  background-color: #0495b9;
+  background-color: #0284cf;
+  /*0495b9*/
   overflow-x:hidden;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -13,9 +14,22 @@ body::-webkit-scrollbar {
   display: none;
 }
 .content{
-  margin-left: 15%;
+  margin-left: 8%;
 }
-
+.container{
+  border:1px solid white;
+  height: 370px;
+  width:60%;
+  margin: auto;
+  align-items: center;
+}
+.carousel-inner{
+  height: 150px;
+}
+.item img{
+  height: 100px;
+  width:100px;
+}
 hr{
   width: 60%;
   margin: 15px auto;
@@ -105,7 +119,6 @@ a:hover{
 .recruiter{
   width: fit-content;
   margin:auto;
-  height: 150px;
   padding: 20px;
   padding-top:40px;
 }
@@ -119,7 +132,7 @@ input[type=radio] {
   display: none;
 }
 
-.container {
+.container1 {
   width: 100%;
   border:1px solid white;
   height: 370px;
@@ -142,15 +155,27 @@ input[type=radio] {
   cursor: pointer;
 }
 
-ul {
-  list-style-type: none;
-  background-color: #0284cf;
+.navbar{
   height: 100%;
-  width:15%;
+  width:12%;
   margin: 0px;
   padding:0px;
-  vertical-align: middle;
   position: fixed;
+  align-items: center;
+  vertical-align: middle;
+}
+.line {
+  border-left: 2px solid white;
+  height: 33.33%;
+  margin-left:25px;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  vertical-align: middle;
+  margin: 0px;
+  padding: 0px;
 }
 
 li a {
@@ -158,20 +183,26 @@ li a {
   color: #fff;
   border:0px;
   border-radius: 0px;
+  text-align: left;
   text-decoration: none;
   margin-top:10px;
+  margin-left: 3px;
 }
-li a:active {
-  background-color: #1f72a1;
+
+
+/* Hovered links */
+li a:hover {
+  background-color: #21aeff;
+  color: white;
+}
+/* Active links */
+.active {
+  /*background-color: #1f72a1;*/
   color: white;
   border-left:3px solid white;
 }
 
 
-li a:hover:not(:active) {
-  background-color: #21aeff;
-  color: white;
-}
 
 .connect{
   width: fit-content;

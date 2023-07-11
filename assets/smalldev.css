@@ -26,7 +26,7 @@
     .subtitle1{
         font-size: 12px;
     }
-    .container{
+    .container1{
         height: 270px;
         width:100%;
     }
@@ -65,7 +65,7 @@
     .subtitle1{
         font-size: 14px;
     }
-    .container{
+    .container1{
         height: 220px;
         width: 100%;
     }
@@ -105,16 +105,19 @@
     .content{
         margin-left: 0px;
     }
-    
+    .line{
+        display: none;
+    }
   }
 
 @media screen and (min-width:992px) {
-    #about{
-        height: 100%;
+    section{
+        height: 100vh;
     }
     .recruiter{
         position: relative;
         bottom: 0px;
     }
+    
     
 }
