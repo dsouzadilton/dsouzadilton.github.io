@@ -34,6 +34,9 @@
         width:200px;
         height: 250px;
     }
+    .tech .fa{
+        font-size: 12px;
+    }
 }
 
 
@@ -63,22 +66,42 @@
         margin-top: 10px;
     }
     .subtitle1{
-        font-size: 14px;
+        font-size: 18px;
     }
     .container1{
         height: 220px;
         width: 100%;
     }
     .card{
-        width:150px;
+        width:250px;
         height: 200px;
     }
-    ul{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-       
+     .project-title{
+         font-size: 12px;
+         margin-top: 10px;
+         margin-bottom: px;
+     }
+     .project-description{
+         font-size: 9px;
+     }
+    .tech-stack p{
+        font-size: 10px;
+        margin: 1px;
+        margin-bottom: 10px;
+    }
+    .tech .fa{
+        font-size: 22px;
+    }
+    .tech ul li{
+        font-size: 12px;
+    }
+    .tech{
+        height: fit-content;
+        width: 40%;
+        border-radius:10px;
+    }
+    .content hr{
+        margin-top: 20px;
     }
 }
 
@@ -96,14 +119,52 @@
     }
     p{
         font-size: 24px;
+    }
+    hr{
+        margin-top: 20px;
     }      
+    
+    .container1{
+        height: 320px;
+        width: 100%;
+    }
+    .card{
+        width:400px;
+        height: 300px;
+    }
+     .project-title{
+         font-size: 18px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+     }
+     .project-description{
+         font-size: 14px;
+     }
+     .tech-stack p{
+        font-size: 16px;
+        margin: 4px;
+        margin-bottom: 20px;
+    }
+    .project a{
+        font-size: 18px;
+    }
+    .tech{
+        height: fit-content;
+        width: 40%;
+        border-radius:10px;
+        margin-bottom: 15px;
+    }
+    .content hr{
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 992px) {
-    ul {
+    .navbar ul {
       display: none;
     }
     .content{
-        margin-left: 0px;
+        margin: 0px;
+        width:100%;
     }
     .line{
         display: none;

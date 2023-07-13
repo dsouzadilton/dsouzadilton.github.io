@@ -18,6 +18,21 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .tech{
+        display: inline-block;
+        width:25%;
+        
+        margin-top: 10vh;
+        border: 2px solid white;
+        height: 60vh;
+        border-radius: 10px;
+      }
+      .tech-container{
+        width:80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+      }
     .head{
         width: 900px;
         margin: auto;
@@ -52,6 +67,13 @@
     a:hover{
         transition: 0.7s;
     }
+    .subtitle1{
+        margin-top: 60px;
+    }
+    .project a{
+        margin:10px;
+      }
+      
 }
 
 
