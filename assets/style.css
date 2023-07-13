@@ -3,7 +3,7 @@
 body {
   padding: 0%;
   margin: 0%;
-  background-color: #0284cf;
+  background-color: #ff9011;
   /*0495b9*/
   overflow-x:hidden;
   -ms-overflow-style: none;  /* IE and Edge */
@@ -95,7 +95,7 @@ a:hover{
   background-color: #21aeff;
 }
 .description{
-  text-align: center;padding:10px;margin: 0px;
+  text-align: center;padding:10px;margin: 2px;
 }
 .recruiter{
   width: fit-content;
