@@ -26,6 +26,9 @@
     body {
     overscroll-behavior: contain;
 }
+a:hover{
+    text-decoration: none;
+}
 
 .portfolio .row .col-md-4 {
     padding: 15px;
@@ -183,6 +186,39 @@
 .box-content {
     background: #262626;
 }
+.profilepic{
+    height: 200px;
+}
+@media only screen and (min-width: 769px){
+    .profilepic{
+        height: 400px;
+    }
+    .navbar{display: none;}
+    .new-navbar{
+        height: fit-content;
+        position: fixed;
+        background-color: #272727;
+        right: 0px;
+        top:0px;
+        padding: 10px 20px;
+        z-index: 101;
+        width: 100%;
+    }
+    .brand{
+        margin-top:12px;
+        margin-left: 20px;
+    }
+    .new-navbar ul{
+        clear: left;
+    }
+    .new-navbar ul li{
+        display: inline-block;
+        margin: 0px 10px;
+        font-size: 26px;
+        float: right;
+    }
+    
+}
 
 </style>
 </head>
@@ -192,7 +228,7 @@
 
 <div class="click-capture"></div>
 
-<div class="menu" style="width: 20%;">
+<div class="menu" style="width: 40%;">
 <span class="close-menu icon-cross2 right-boxed"></span>
 <ul class="menu-list right-boxed" style="height: fit-content;">
 <li data-menuanchor="hero">
@@ -227,7 +263,7 @@
 </div>
 
 <header class="navbar boxed">
-<div class="navbar-bg"></div>
+<div class="navbar-bg" style="background-color: #272727;"></div>
 <a class="brand" href="">
 <img class="brand-img" alt="" src="images/brand.png">
 <div class="brand-info">
@@ -240,19 +276,33 @@
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<div class="contacts d-none d-md-block">
-<div class="contact-item">
-
-</div><!--
-<div class="contact-item spacer">
-/
-</div>
-<div class="contact-item">
-<a href="mailto:diltondsouza1@gmail.com"><span class="__cf_email__" >diltondsouza1@gmail.com</span></a>
-</div>--><div class="contact-item"><p>"Lorem ipsum dolor sit amet consectetur adipisicing el "</p>
-</div>
-</div>
 </header>
+
+<div class="new-navbar">
+    
+        <ul class="new-navbar" style="height: fit-content;">
+            <li data-menuanchor="contact">
+                <a href="#page4">Contact</a>
+                </li>
+                <li data-menuanchor="project">
+                    <a href="#page3">Projects</a>
+                    </li>
+            <li data-menuanchor="resume">
+            <a href="#page2">Resume</a>
+            </li>
+            <li data-menuanchor="hero">
+                <a href="#page1" >Home</a>
+                </li>
+                <a class="brand" href="">
+                    <img class="brand-img" alt="" src="images/brand.png">
+                    <div class="brand-info">
+                    <div class="brand-name">Dilton's</div>
+                    <div class="brand-text">developer profile</div>
+                    </div>
+                    </a>
+            
+            </ul>
+</div>
 <div class="copy-bottom white boxed">© Dilton 2023.</div>
 <div class="social-list social-list-bottom boxed">
     <a href="#" class="fa fa-linkedin"></a>
@@ -270,21 +320,21 @@
 <div class="boxed boxed-inner">
 <div class="vertical-title d-none d-lg-block"><span></span></div>
 
-<div class="boxed"><img src="/images/bg/dilton.jpeg" alt="" style="height: 400px;border: 1px solid;box-shadow: 8px 10px gray;float: left;margin: 0px 20px;">
+<div class="boxed"><img class="profilepic" src="/images/bg/dilton.jpeg" alt="" style="border: 1px solid;box-shadow: 8px 10px gray;float: left;margin: 0px 20px;">
 
 <div class="container">
 <div class="intro">
 <div class="row">
 <div class="col-md-8 col-lg-6">
     <p class="subtitle-top"></p>
-    <p class="subtitle-top"></p>
 <h1 class="display-2 text-white" style="text-transform: none;"><span class="text-primary">Hello</span><br>I'm Dilton.</h1>
-<br><p class="subtitle-top">I'm a <span class="txt-rotate" data-period="2000" data-rotate='[ "Developer.", "Designer.", "Innovator", "Analyst"]' style="background-color: yellow;padding:5px;color:black"></span></p>
+<br><p class="subtitle-top" style="margin-bottom: 40px;">I'm a <span class="txt-rotate" data-period="2000" data-rotate='[ "Developer.", "Designer.", "Innovator", "Analyst"]' style="background-color: yellow;padding:5px;color:black"></span></p>
 <!--<a href="https://www.youtube.com/watch?v=0O2aH4XLbto" class="popup-youtube icon ion-ios-play"></a>-->
-<span style="padding-top: 5px;">
-<a href="https://www.linkedin.com/in/diltondsouza"  target="_blank" class=" icon ion-social-linkedin" style="font-size: 46px;background-color: gr;color: gray;"></a>
-<a href="https://www.github.com/dsouzadilton" target="_blank" class="icon ion-social-github" style="font-size: 46px;background-color: gr;color: gray;margin-left: 10px;"></a></span>
-</div>
+<span>
+<a href="https://www.linkedin.com/in/diltondsouza"  target="_blank" class=" fa fa-linkedin" style="font-size: 38px;background-color: gray;color: #272727;padding:5px;border-radius:5px;"></a>
+<a href="https://www.github.com/dsouzadilton" target="_blank" class="fa fa-github" style="font-size: 38px;background-color: gray;color: #272727;padding:5px;margin-left: 10px;margin-bottom: 10px;border-radius: 5px;"></a></span>
+
+</div><p style="color: grey;">I'm a computer engineering graduate fresher with a passion for software and web development. My interest also lies in the field of IoT, Machine learning, Data Science and Data analysis. Throughout my undergraduate coursework, I learnt various technologies and developed my skill set. I have implemented and strenghtened these skills through different projects. I am looking for opportunities where I can showcase my skills and gain experience.</p>
 </div>
 </div>
 </div>
@@ -351,43 +401,70 @@
 <div class="progress-bars" style="margin-top: 10px;">
 <div class="clearfix">
 <div class="number float-left">Java</div>
-<div class="number float-right">65%</div>
+<div class="number float-right">%</div>
 </div>
 <div class="progress" style="margin-bottom: 20px;">
 <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 <div class="clearfix">
 <div class="number float-left">Python</div>
-<div class="number float-right">65%</div>
+<div class="number float-right">%</div>
 </div>
 <div class="progress">
 <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
 <div class="clearfix">
     <div class="number float-left">PHP</div>
-    <div class="number float-right">45%</div>
+    <div class="number float-right">%</div>
     </div>
-    <div class="progress" style="margin-bottom: 60px;">
+    <div class="progress">
     <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-    </div></div>
+    </div>
+    <div class="clearfix">
+        <div class="number float-left">JavaScript</div>
+        <div class="number float-right">%</div>
+        </div>
+        <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="clearfix">
+            <div class="number float-left">C and C++</div>
+            <div class="number float-right">%</div>
+            </div>
+            <div class="progress" style="margin-bottom: 60px;">
+            <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div></div>
     <p style="margin-bottom: 0px;">Databases</p>
 <div class="progress-bars" style="margin-top: 10px;">
 
     <div class="clearfix">
         <div class="number float-left">MongoDB</div>
-        <div class="number float-right">60%</div>
+        <div class="number float-right">%</div>
         </div>
         <div class="progress">
-        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" style="width: 60%;background-color:#ff8c05;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
         <div class="clearfix">
             <div class="number float-left">MySQL</div>
-            <div class="number float-right">65%</div>
+            <div class="number float-right">%</div>
             </div>
             <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" style="width: 65%;background-color:#ff8c05;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            
+            <div class="clearfix">
+                <div class="number float-left">PostgreSQL</div>
+                <div class="number float-right">%</div>
+                </div>
+                <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 65%;background-color:#ff8c05;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="clearfix">
+                    <div class="number float-left">Firebase</div>
+                    <div class="number float-right">%</div>
+                    </div>
+                    <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 65%;background-color:#ff8c05;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
 </div>
 </div>
 </div>
