@@ -17,6 +17,8 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i&amp;display=swap" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
     .progress{
         margin-bottom: 20px;
@@ -24,6 +26,164 @@
     body {
     overscroll-behavior: contain;
 }
+
+.portfolio .row .col-md-4 {
+    padding: 15px;
+}
+.portfolio .portfolio-filter-menu {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.portfolio .portfolio-filter-menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: .4s ease-in-out;
+}
+.portfolio .portfolio-filter-menu ul li span {
+    z-index: 99;
+    position: relative;
+}
+.portfolio .portfolio-filter-menu ul li span::after {
+    content: "";
+    height: 0;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    z-index: -1000;
+}
+.portfolio .portfolio-filter-menu ul li span:hover {
+    color: #ff8c05;
+}
+.portfolio .portfolio-filter-menu ul li span:hover::after {
+    height: 10px;
+    background: #525252;
+}
+.portfolio .portfolio-filter-menu ul li.active {
+    color: #ff8c05;
+}
+.portfolio .content-image {
+    position: relative;
+}
+.portfolio .content-image:hover .image-overlay {
+    opacity: 1;
+}
+.portfolio .content-image:hover .portfolio-caption .title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff8c05;
+    background: -moz-linear-gradient(-45deg, #ff8c05 0%, #d61a5e 100%);
+    background: -webkit-linear-gradient(-45deg, #ff8c05 0%, #d61a5e 100%);
+    background: linear-gradient(135deg, #ff8c05 0%, #d61a5e 100%);
+    animation: titles 600ms cubic-bezier(0.45, 0.81, 0.83, 0.18) forwards;
+    transform: translateY(101%);
+    animation-delay: .1s;
+}
+.portfolio .content-image:hover .portfolio-caption .title h4 {
+    opacity: 1;
+}
+.portfolio .content-image:hover .portfolio-caption .subtitle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff8c05;
+    background: -moz-linear-gradient(-45deg, #ff8c05 0%, #d61a5e 100%);
+    background: -webkit-linear-gradient(-45deg, #ff8c05 0%, #d61a5e 100%);
+    background: linear-gradient(135deg, #ff8c05 0%, #d61a5e 100%);
+    animation: titles 500ms cubic-bezier(0.45, 0.81, 0.83, 0.18) forwards;
+    transform: translateY(101%);
+    animation-delay: .5s;
+}
+.portfolio .content-image:hover .portfolio-caption .subtitle span {
+    opacity: 1;
+}
+.portfolio .content-image img {
+    width: 100%;
+    border-radius: 3px;
+}
+.portfolio .content-image .portfolio-caption {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+}
+.portfolio .content-image .portfolio-caption .title {
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition-duration: .4s;
+    transition-delay: .4s;
+}
+.portfolio .content-image .portfolio-caption .title h4 {
+    font-size: 20px;
+    font-weight: 700;
+    transition-duration: .1s;
+    transition-delay: 750ms;
+    opacity: 0;
+    line-height: 24px;
+}
+.portfolio .content-image .portfolio-caption .subtitle {
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition-duration: .4s;
+    transition-delay: .4s;
+}
+.portfolio .content-image .portfolio-caption .subtitle span {
+    transition-duration: .1s;
+    transition-delay: 700ms;
+    opacity: 0;
+}
+.portfolio .content-image .image-overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 3px;
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+@keyframes titles {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-101%);
+    }
+}
+@keyframes subtitles {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-101%);
+    }
+}
+
+.box-content {
+    background: #262626;
+}
+
 </style>
 </head>
 <body>
@@ -35,31 +195,32 @@
 <div class="menu" style="width: 20%;">
 <span class="close-menu icon-cross2 right-boxed"></span>
 <ul class="menu-list right-boxed" style="height: fit-content;">
-<li data-menuanchor="page1">
+<li data-menuanchor="hero">
 <a href="#page1" >Home</a>
 </li>
-<li data-menuanchor="page2">
-<a href="#page2">About</a>
+<li data-menuanchor="resume">
+<a href="#page2">Resume</a>
 </li>
-<li data-menuanchor="page3">
-<a href="#page3">Resume</a>
+<li data-menuanchor="project">
+<a href="#page3">Projects</a>
 </li>
-<li data-menuanchor="page4">
-<a href="#page4">Certifications</a>
+<li data-menuanchor="contact">
+<a href="#page4">Contact</a>
 </li>
-</li>
+<!--
 <li data-menuanchor="page6">
 <a href="#page5">Projects</a>
 </li>
 <li data-menuanchor="page7">
 <a href="#page6">Contact</a>
 </li>
+-->
 </ul>
 <div class="menu-footer right-boxed">
 <div class="social-list">
 <a href="#" class="icon ion-social-twitter"></a>
 <a href="#" class="icon ion-social-instagram"></a>
-<a href="#" class="icon ion-social-medium"></a>
+<a href="#" class="fa fa-skype"></a>
 </div>
 
 </div>
@@ -94,14 +255,14 @@
 </header>
 <div class="copy-bottom white boxed">© Dilton 2023.</div>
 <div class="social-list social-list-bottom boxed">
-<a href="#" class="icon ion-social-twitter"></a>
-<a href="#" class="icon ion-social-facebook"></a>
-<a href="#" class="icon ion-social-googleplus"></a>
-<a href="#" class="icon ion-social-linkedin"></a>
-<a href="#" class="icon ion-social-dribbble-outline"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-github"></a>
+<a href="#" class="fa fa-tumblr"></a>
+<a href="#" class="fa fa-codepen"></a>
+<a href="#" class="fa fa-medium"></a>
 </div>
 <div class="pagepiling">
-<div data-anchor="page1" class="pp-scrollable text-white section section-1">
+<div data-anchor="hero" class="pp-scrollable text-white section section-1">
 <div class="scroll-wrap">
 <div class="section-bg" style="background-color: gr;"></div>
 <div class="scrollable-content">
@@ -133,12 +294,12 @@
 </div>
 </div>
 </div>
-<div data-anchor="page2" class="pp-scrollable section section-2">
+<div data-anchor="resume" class="pp-scrollable section section-2">
 <div class="scroll-wrap">
 <div class="scrollable-content">
 <div class="vertical-centred" style="padding-top: 50px;">
 <div class="boxed boxed-inner">
-<div class="vertical-title text-white  d-none d-lg-block"><span>About Me</span></div>
+<div class="vertical-title text-white  d-none d-lg-block"><span>Resume</span></div>
 <div class="boxed">
 <div class="container">
 <div class="intro">
@@ -238,148 +399,154 @@
 </div>
 </div>
 </div>
-<div data-anchor="page3" class="pp-scrollable text-white section section-3">
+
+<div data-anchor="project" class="pp-scrollable text-white section section-5">
 <div class="scroll-wrap">
-<div class="section-bg" style="background-image:url(images/bg/resume.jpg);"></div>
-<div class="scrollable-content">
-<div class="vertical-centred">
-<div class="boxed boxed-inner">
-<div class="vertical-title d-none d-lg-block"><span>Resume</span></div>
-<div class="boxed">
-<div class="container">
-<div class="intro">
-<div class="row row-resume">
-<div class="col-md-6">
-<div class="col-resume">
-<h4 class="title-uppercase">Education</h4>
-<div class="resume-content">
-<div class="resume-inner">
-<div class="resume-row">
-<h6 class="resume-type">Specialization course</h6>
-<p class="resume-study">University of studies, Poland, Cracow</p>
-<p class="resume-date text-primary">Jan 2004 - Dec 2006</p>
-<p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus, </p>
-</div>
-<div class="resume-row">
-<h6 class="resume-type">Specialization course</h6>
-<p class="resume-study">University of studies, Poland, Cracow</p>
-<p class="resume-date text-primary">Jan 2004 - Dec 2006</p>
-<p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="col-resume">
-<h4 class="title-uppercase">Experience</h4>
-<div class="resume-content">
-<div class="resume-inner">
-<div class="resume-row">
-<h6 class="resume-type">Webdesigner & Front-end</h6>
-<p class="resume-study">University of studies, Poland, Cracow</p>
-<p class="resume-date text-primary">Jan 2004 - Dec 2006</p>
-<p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus, deleniti!</p>
-</div>
-<div class="resume-row">
-<h6 class="resume-type">WordPress Developer</h6>
-<p class="resume-study">University of studies, Poland, Cracow</p>
-<p class="resume-date text-primary">Jan 2004 - Dec 2006</p>
-<p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus nobis animi assumenda sint recusandae! Dolor placeat debitis animi illum quo repellendus pariatur, enim doloribus, deleniti!!</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div data-anchor="page4" class="pp-scrollable section section-4">
-<div class="scroll-wrap">
-<div class="scrollable-content">
-<div class="vertical-centred">
-<div class="boxed boxed-inner">
-<div class="vertical-title text-white d-none d-lg-block"><span>Partners</span></div>
-<div class="boxed">
-<div class="container">
-<div class="intro">
-<h2 class="title-uppercase text-white">Trusted from Clients</h2>
-<div class="row row-partners">
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/1.png"></div>
-</div>
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/2.png"></div>
-</div>
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/3.png"></div>
-</div>
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/4.png"></div>
-</div>
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/5.png"></div>
-</div>
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/6.png"></div>
-</div>
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/7.png"></div>
-</div>
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/8.png"></div>
-</div>
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/9.png"></div>
-</div>
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/10.png"></div>
-</div>
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/11.png"></div>
-</div>
-<div class="col-sm-6 col-md-4 col-xl-3 col-partner">
-<div class="partner-inner"><img alt="" src="images/partners/12.png"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div data-anchor="page5" class="pp-scrollable text-white section section-5">
-<div class="scroll-wrap">
-<div class="bg-changer">
+<!--<div class="bg-changer">--><div>
 <div class="section-bg" style="background-image:url(images/bg/project1.jpg);"></div>
+<!--
 <div class="section-bg" style="background-image:url(images/bg/project2.jpg);"></div>
 <div class="section-bg" style="background-image:url(images/bg/project3.jpg);"></div>
 <div class="section-bg" style="background-image:url(images/bg/project4.jpg);"></div>
 <div class="section-bg" style="background-image:url(images/bg/project5.jpg);"></div>
+-->
 </div>
 <div class="scrollable-content">
 <div class="vertical-centred">
 <div class="boxed boxed-inner">
-<div class="vertical-title  d-none d-lg-block"><span>my works</span></div>
-<div class="boxed">
-<div class="container">
+<div class="vertical-title  d-none d-lg-block"><span>my projects</span></div>
+<div >
+<div>
 <div class="intro">
 <div class="row">
  <div class="col-md-12">
-<h2 class="title-uppercase text-white">LATEST PROJECTS</h2>
+<div id="portfolio" class="portfolio segments">
+    <div>
+        <div>
+            <div class="portfolio-filter-menu">
+                <ul>
+                    <li data-filter="all" class="active">
+                        <span>All</span>
+                    </li>
+                    <li data-filter="1">
+                        <span>Web Dev</span>
+                    </li>
+                    <li data-filter="2">
+                        <span>Android</span>
+                    </li>
+                    <li data-filter="3">
+                        <span>IoT</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row no-gutters filtr-container">
+                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
+                    <div class="content-image">
+                        <a href="images/portfolio1.jpg" class="portfolio-popup">
+                            <img src="images/portfolio1.jpg" alt="">
+                            <div class="image-overlay"></div>
+                            <div class="portfolio-caption">
+                                <div class="title">
+                                    <h4>Classic Minimalist Door</h4>
+                                </div>
+                                <div class="subtitle">
+                                    <span>Graphic Design</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
+                    <div class="content-image">
+                        <a href="images/portfolio2.jpg" class="portfolio-popup">
+                            <img src="images/portfolio2.jpg" alt="">
+                            <div class="image-overlay"></div>
+                            <div class="portfolio-caption">
+                                <div class="title">
+                                    <h4>Green Succulent Plants</h4>
+                                </div>
+                                <div class="subtitle">
+                                    <span>Nature Plant</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2, 1">
+                    <div class="content-image">
+                        <a href="images/portfolio3.jpg" class="portfolio-popup">
+                            <img src="images/portfolio3.jpg" alt="">
+                            <div class="image-overlay"></div>
+                            <div class="portfolio-caption">
+                                <div class="title">
+                                    <h4>Yellow Rose Pale Plant</h4>
+                                </div>
+                                <div class="subtitle">
+                                    <span>Flower Plant</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
+                    <div class="content-image">
+                        <a href="images/portfolio4.jpg" class="portfolio-popup">
+                            <img src="images/portfolio4.jpg" alt="">
+                            <div class="image-overlay"></div>
+                            <div class="portfolio-caption">
+                                <div class="title">
+                                    <h4>Succulent Plant in Pot</h4>
+                                </div>
+                                <div class="subtitle">
+                                    <span>Plant House</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1, 2">
+                    <div class="content-image">
+                        <a href="images/portfolio5.jpg" class="portfolio-popup">
+                            <img src="images/portfolio5.jpg" alt="">
+                            <div class="image-overlay"></div>
+                            <div class="portfolio-caption">
+                                <div class="title">
+                                    <h4>Photo of Green Cactus</h4>
+                                </div>
+                                <div class="subtitle">
+                                    <span>Plant House</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3, 1">
+                    <div class="content-image">
+                        <a href="images/portfolio6.jpg" class="portfolio-popup">
+                            <img src="images/portfolio6.jpg" alt="">
+                            <div class="image-overlay"></div>
+                            <div class="portfolio-caption">
+                                <div class="title">
+                                    <h4>Two Feet of Two Ferns</h4>
+                                </div>
+                                <div class="subtitle">
+                                    <span>Graphic Design</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
 <div class="row-project-box row">
 <div class="col-project-box col-sm-6 col-md-4 col-lg-4">
 <a href="project-detail.html" class="project-box">
 <div class="project-box-inner">
-<h5>Boranito<br>Skat</h5>
+<h5>Online Auction<br>System</h5>
 <div class="project-category">House Design</div>
 </div>
 </a>
@@ -416,7 +583,7 @@
 </div>
 </a>
 </div>
-</div>
+</div> -->
 <a href="#" class="h5 link-arrow text-white">view all projects <i class="icon icon-chevron-right"></i></a>
 </div>
 </div>
@@ -428,61 +595,10 @@
 </div>
 </div>
 </div>
-<div data-anchor="page6" class="pp-scrollable text-white section section-6">
+
+<div data-anchor="contact" class="pp-scrollable section section-7">
 <div class="scroll-wrap">
-<div class="section-bg" style="background-image:url(images/bg/reviews.jpg);"></div>
-<div class="scrollable-content">
-<div class="vertical-centred">
-<div class="boxed boxed-inner">
-<div class="vertical-title  d-none d-lg-block"><span>testimonials</span></div>
-<div class="boxed">
-<div class="container">
-<div class="intro">
-<div class="row">
-<div class="col-lg-6">
-<span class="icon-quote ion-quote"></span>
-<div class="review-carousel owl-carousel">
-<div class="review-carousel-item">
-<div class="text">
-<p>“ If you are seeking an Interior designer that will understand exactly your needs, and someone who will utilise their creative and technical skills in parity with your taste, then Suzanne at The Robert Studio is perfect.</p>
-</div>
-<div class="review-author">
-<div class="author-name">David & Elisa</div>
-<i>Apartment view lake at Brooklyn</i>
-</div>
-</div>
-<div class="review-carousel-item">
-<div class="text">
-<p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus doloremque maxime tempora, quia architecto iure ipsum ipsa, corporis placeat.</p>
-</div>
-<div class="review-author">
-<div class="author-name">Amanda</div>
-<i>Apartment view lake at Brooklyn</i>
-</div>
-</div>
-<div class="review-carousel-item">
-<div class="text">
-<p>“ If you are seeking an Interior designer that will understand exactly your needs, and someone who will utilise their creative and technical skills in parity with your taste, then Suzanne at The Robert Studio is perfect.</p>
-</div>
-<div class="review-author">
-<div class="author-name">John</div>
-<i>Apartment view lake at Brooklyn</i>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div data-anchor="page7" class="pp-scrollable section section-7">
-<div class="scroll-wrap">
-<div class="section-bg" ></div>
+<div class="section-bg"  style="background-image:url(images/bg/contact.jpg);opacity:0.2;"></div>
 <div class="scrollable-content">
 <div class="vertical-centred">
 <div class="boxed boxed-inner">
@@ -492,13 +608,14 @@
 <div class="intro overflow-hidden">
 <div class="row">
 <div class="col-md-6">
-<h2 class="title-uppercase" style="text-transform: none;"><span class="text-primary">Mumbai</span>,<br>India</h2>
-<h5 class="text-muted">My virtual presence</h5>
-<a href="#" class="icon ion-social-twitter"></a>
-<a href="#" class="icon ion-social-facebook"></a>
-<a href="#" class="icon ion-social-googleplus"></a>
-<a href="#" class="icon ion-social-linkedin"></a>
-<a href="#" class="icon ion-social-dribbble-outline"></a>
+<h2 class="title-uppercase" style="text-transform: none;"><br><i class="fa fa-map-marker"></i><span class="text-primary"> Mumbai</span><br>India</h2>
+<br><br><br><h5 class="text-muted" style="margin-bottom: 10px;">Connect with me</h5>
+<a href="" class="fa fa-twitter"  style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
+<a href="" class="fa fa-instagram" style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
+<a href="" class="fa fa-quora" style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
+<a href="" class="fa fa-tumblr" style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
+<a href="" class="fa fa-skype" style="font-size: 36px;background-color: gr;color: gray;"></a>
+<a href="" class="fa fa-fac" style="font-size: 36px;background-color: gr;color: gray;"></a>
 <section class="contact-address">
 </section>
 </div>
@@ -520,9 +637,9 @@
 </div>
 <div class="form-group form-group-message col-sm-12">
 <span id="success" class="text-primary">Thank You, your message is successfully sent!</span>
-<span id="error" class="text-primary">Sorry, something went wrong </span>
+<span id="error" class="text-primary">Sorry, the form is not accepting responses currently.</span>
 </div>
-<div class="col-sm-12"><button type="submit" class="btn">Contact me</button></div>
+<div class="col-sm-12"><button type="submit" class="btn">Send Message</button></div>
 </div>
 </form>
 </div>
@@ -544,12 +661,15 @@
 <script src="js/smoothscroll.js"></script>
 <script src="js/animsition.js"></script>
 <script src="js/jquery.validate.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
+
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.filterizr.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/jquery.pagepiling.min.js"></script>
 
 <script src="js/scripts.js"></script>
 </body>
 
-<!-- robert/  03:30:37 GMT -->
+
 </html>
