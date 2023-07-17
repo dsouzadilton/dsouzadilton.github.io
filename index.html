@@ -186,6 +186,9 @@ a:hover{
 .box-content {
     background: #262626;
 }
+.subtitle{
+    color: #f3ca2f;
+}
 @media only screen and (max-width: 769px){
     .profilepic{
     height: 350px;
@@ -194,11 +197,24 @@ a:hover{
 .new-navbar{
     display: none;
 }
+.navlink{
+        color: #ff8c05;
+    }
+    .active{
+        color: #f3ca2f;
+        border-bottom: 1px solid white;
+    }
+    .portfolio-filter-menu ul{
+        margin: 10px;
+        padding: 0px;
+        border-bottom: 1px solid white;
+    }
 }
 
 @media only screen and (min-width: 769px){
     .profilepic{
         height: 400px;
+        margin-top: 100px;
     }
     .navbar{display: none;}
     .new-navbar{
@@ -219,10 +235,16 @@ a:hover{
         clear: left;
     }
     .new-navbar ul li{
-        display: inline-block;
+        float: right;
+        list-style: none;
         margin: 0px 10px;
         font-size: 26px;
-        float: right;
+    }
+    .navlink{
+        color: #ff8c05;
+    }
+    .notice{
+        display: none;
     }
     
 }
@@ -239,16 +261,16 @@ a:hover{
 <span class="close-menu icon-cross2 right-boxed"></span>
 <ul class="menu-list right-boxed" style="height: fit-content;">
 <li data-menuanchor="hero">
-<a href="#page1" >Home</a>
+<a href="#page1" class="navlink active">Home</a>
 </li>
 <li data-menuanchor="resume">
-<a href="#page2">Resume</a>
+<a href="#page2" class="navlink">Resume</a>
 </li>
 <li data-menuanchor="project">
-<a href="#page3">Projects</a>
+<a href="#page3" class="navlink">Projects</a>
 </li>
 <li data-menuanchor="contact">
-<a href="#page4">Contact</a>
+<a href="#page4" class="navlink">Contact</a>
 </li>
 <!--
 <li data-menuanchor="page6">
@@ -289,16 +311,16 @@ a:hover{
     
         <ul class="new-navbar" style="height: fit-content;">
             <li data-menuanchor="contact">
-                <a href="#page4">Contact</a>
+                <a href="#page4"  class="navlink ">Contact</a>
                 </li>
                 <li data-menuanchor="project">
-                    <a href="#page3">Projects</a>
+                    <a href="#page3" class="navlink ">Projects</a>
                     </li>
             <li data-menuanchor="resume">
-            <a href="#page2">Resume</a>
+            <a href="#page2" class="navlink">Resume</a>
             </li>
             <li data-menuanchor="hero">
-                <a href="#page1" >Home</a>
+                <a href="#page1" class="navlink active" >Home</a>
                 </li>
                 <a class="brand" href="">
                     <img class="brand-img" alt="" src="images/brand.png">
@@ -319,7 +341,7 @@ a:hover{
 <a href="#" class="fa fa-medium"></a>
 </div>
 <div class="pagepiling">
-<div data-anchor="hero" class="pp-scrollable text-white section section-1">
+<div data-anchor="hero" class="pp-scrollable text-white section section-1" id="page1">
 <div class="scroll-wrap">
 <div class="section-bg" style="background-color: gr;"></div>
 <div class="scrollable-content">
@@ -327,7 +349,7 @@ a:hover{
 <div class="boxed boxed-inner">
 <div class="vertical-title d-none d-lg-block"><span></span></div>
 
-<div class="boxed"><img class="profilepic" src="/images/bg/dilton.jpeg" alt="" style="border: 1px solid;box-shadow: 8px 10px gray;float: left;margin: 0px 20px;">
+<div class="boxed"><img class="profilepic" src="/images/bg/dilton.jpeg" alt="" style="border: 1px solid;box-shadow: 8px 10px gray;float: left;margin: 50px 40px 0px 20px;">
 
 <div class="container">
 <div class="intro">
@@ -351,7 +373,7 @@ a:hover{
 </div>
 </div>
 </div>
-<div data-anchor="resume" class="pp-scrollable section section-2">
+<div data-anchor="resume" class="pp-scrollable section section-2" id="page2">
 <div class="scroll-wrap">
 <div class="scrollable-content">
 <div class="vertical-centred" style="padding-top: 50px;">
@@ -484,7 +506,7 @@ a:hover{
 </div>
 </div>
 
-<div data-anchor="project" class="pp-scrollable text-white section section-5">
+<div data-anchor="project" class="pp-scrollable text-white section section-3" id="page3">
 <div class="scroll-wrap">
 <!--<div class="bg-changer">--><div>
 <div class="section-bg" style="background-image:url(images/bg/project1.jpg);"></div>
@@ -499,6 +521,7 @@ a:hover{
 <div class="vertical-centred">
 <div class="boxed boxed-inner">
 <div class="vertical-title  d-none d-lg-block"><span>my projects</span></div>
+
 <div >
 <div>
 <div class="intro">
@@ -516,159 +539,151 @@ a:hover{
                         <span>Web Dev</span>
                     </li>
                     <li data-filter="2">
-                        <span>Android</span>
+                        <span>Software</span>
                     </li>
                     <li data-filter="3">
+                        <span>Android</span>
+                    </li>
+                    <li data-filter="4">
                         <span>IoT</span>
+                    </li>
+                    <li data-filter="5">
+                        <span>Machine Learning</span>
                     </li>
                 </ul>
             </div>
-
+            <p class="notice" style="text-align: center;">Press and hold down card for details</p>
             <div class="row no-gutters filtr-container">
-                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
+                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2">
                     <div class="content-image">
-                        <a href="images/portfolio1.jpg" class="portfolio-popup">
-                            <img src="images/portfolio1.jpg" alt="">
+                        
+                            <img src="images/projects/cov19.jpg" alt="">
                             <div class="image-overlay"></div>
                             <div class="portfolio-caption">
                                 <div class="title">
-                                    <h4>Classic Minimalist Door</h4>
-                                </div>
+                                    <h4>PyCov-19</h4>
+                                </div><br>
+                                
                                 <div class="subtitle">
-                                    <span>Graphic Design</span>
+                                    <span>Python webscraping tool to get Covid-19 statistics in any country.</span>
                                 </div>
+                                <a href="project-detail.html" class="portfolio-popup">
+                                    <div class="subtitle">
+                                        <span>More Details</span>
+                                    </div></a> 
                             </div>
-                        </a>
+                        
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
                     <div class="content-image">
-                        <a href="images/portfolio2.jpg" class="portfolio-popup">
-                            <img src="images/portfolio2.jpg" alt="">
-                            <div class="image-overlay"></div>
-                            <div class="portfolio-caption">
-                                <div class="title">
-                                    <h4>Green Succulent Plants</h4>
-                                </div>
-                                <div class="subtitle">
-                                    <span>Nature Plant</span>
-                                </div>
+                        
+                        <img src="images/projects/analysis.jpg" alt="">
+                        <div class="image-overlay"></div>
+                        <div class="portfolio-caption">
+                            <div class="title">
+                                <h4>Student Analysis<br>Portal</h4>
+                            </div><br>
+                            
+                            <div class="subtitle">
+                                <span>Python webscraping tool to get Covid-19 statistics in any country.</span>
                             </div>
-                        </a>
-                    </div>
+                            <a href="project-detail.html" class="portfolio-popup">
+                                <div class="subtitle">
+                                    <span>More Details</span>
+                                </div></a> 
+                        </div>
+                    
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2, 1">
-                    <div class="content-image">
-                        <a href="images/portfolio3.jpg" class="portfolio-popup">
-                            <img src="images/portfolio3.jpg" alt="">
-                            <div class="image-overlay"></div>
-                            <div class="portfolio-caption">
-                                <div class="title">
-                                    <h4>Yellow Rose Pale Plant</h4>
-                                </div>
-                                <div class="subtitle">
-                                    <span>Flower Plant</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
+                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3, 4">
                     <div class="content-image">
-                        <a href="images/portfolio4.jpg" class="portfolio-popup">
-                            <img src="images/portfolio4.jpg" alt="">
-                            <div class="image-overlay"></div>
-                            <div class="portfolio-caption">
-                                <div class="title">
-                                    <h4>Succulent Plant in Pot</h4>
-                                </div>
-                                <div class="subtitle">
-                                    <span>Plant House</span>
-                                </div>
+                        
+                        <img src="images/projects/health.png" alt="">
+                        <div class="image-overlay"></div>
+                        <div class="portfolio-caption">
+                            <div class="title">
+                                <h4>Health Monitoring System</h4>
+                            </div><br>
+                            
+                            <div class="subtitle">
+                                <span>Python webscraping tool to get Covid-19 statistics in any country.</span>
                             </div>
-                        </a>
-                    </div>
+                            <a href="project-detail.html" class="portfolio-popup">
+                                <div class="subtitle">
+                                    <span>More Details</span>
+                                </div></a> 
+                        </div>
+                    
+                </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="5">
+                    <div class="content-image">
+                        
+                        <img src="images/projects/yolo.png" alt="">
+                        <div class="image-overlay"></div>
+                        <div class="portfolio-caption">
+                            <div class="title">
+                                <h4>Project Third Eye</h4>
+                            </div><br>
+                            
+                            <div class="subtitle">
+                                <span>Python webscraping tool to get Covid-19 statistics in any country.</span>
+                            </div>
+                            <a href="project-detail.html" class="portfolio-popup">
+                                <div class="subtitle">
+                                    <span>More Details</span>
+                                </div></a> 
+                        </div>
+                    
+                </div>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1, 2">
                     <div class="content-image">
-                        <a href="images/portfolio5.jpg" class="portfolio-popup">
-                            <img src="images/portfolio5.jpg" alt="">
-                            <div class="image-overlay"></div>
-                            <div class="portfolio-caption">
-                                <div class="title">
-                                    <h4>Photo of Green Cactus</h4>
-                                </div>
-                                <div class="subtitle">
-                                    <span>Plant House</span>
-                                </div>
+                        
+                        <img src="images/projects/course.jpg" alt="">
+                        <div class="image-overlay"></div>
+                        <div class="portfolio-caption">
+                            <div class="title">
+                                <h4>Course Scheduler</h4>
+                            </div><br>
+                            
+                            <div class="subtitle">
+                                <span>Python webscraping tool to get Covid-19 statistics in any country.</span>
                             </div>
-                        </a>
-                    </div>
+                            <a href="project-detail.html" class="portfolio-popup">
+                                <div class="subtitle">
+                                    <span>More Details</span>
+                                </div></a> 
+                        </div>
+                    
+                </div>
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3, 1">
                     <div class="content-image">
-                        <a href="images/portfolio6.jpg" class="portfolio-popup">
-                            <img src="images/portfolio6.jpg" alt="">
-                            <div class="image-overlay"></div>
-                            <div class="portfolio-caption">
-                                <div class="title">
-                                    <h4>Two Feet of Two Ferns</h4>
-                                </div>
-                                <div class="subtitle">
-                                    <span>Graphic Design</span>
-                                </div>
+                        
+                        <img src="images/projects/auction.jpg" alt="">
+                        <div class="image-overlay"></div>
+                        <div class="portfolio-caption">
+                            <div class="title">
+                                <h4>Next Door Hub</h4>
+                            </div><br>
+                            
+                            <div class="subtitle">
+                                <span>Python webscraping tool to get Covid-19 statistics in any country.</span>
                             </div>
-                        </a>
-                    </div>
+                            <a href="project-detail.html" class="portfolio-popup">
+                                <div class="subtitle">
+                                    <span>More Details</span>
+                                </div></a> 
+                        </div>
+                    
+                </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!--
-<div class="row-project-box row">
-<div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-<a href="project-detail.html" class="project-box">
-<div class="project-box-inner">
-<h5>Online Auction<br>System</h5>
-<div class="project-category">House Design</div>
-</div>
-</a>
-</div>
-<div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-<a href="project-detail.html" class="project-box">
-<div class="project-box-inner">
-<h5>White<br>Bottle</h5>
-<div class="project-category">2018 / BRANDING</div>
-</div>
-</a>
-</div>
-<div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-<a href="project-detail.html" class="project-box">
-<div class="project-box-inner">
-<h5>ICO Bottle<br> Opener</h5>
-<div class="project-category">2017 / INTERACTION</div>
-</div>
-</a>
-</div>
-<div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-<a href="project-detail.html" class="project-box">
-<div class="project-box-inner">
-<h5>Rennovate<br> Toilet</h5>
-<div class="project-category">2018 / BRANDING</div>
-</div>
-</a>
-</div>
-<div class="col-project-box col-sm-6 col-md-4 col-lg-4">
-<a href="project-detail.html" class="project-box">
-<div class="project-box-inner">
-<h5>Bauhaus<br> studio</h5>
-<div class="project-category">2017 / INTERACTION</div>
-</div>
-</a>
-</div>
-</div> -->
-<a href="#" class="h5 link-arrow text-white">view all projects <i class="icon icon-chevron-right"></i></a>
 </div>
 </div>
 </div>
@@ -680,7 +695,7 @@ a:hover{
 </div>
 </div>
 
-<div data-anchor="contact" class="pp-scrollable section section-7">
+<div data-anchor="contact" class="pp-scrollable section section-4" id="page4">
 <div class="scroll-wrap">
 <div class="section-bg"  style="background-image:url(images/bg/contact.jpg);opacity:0.2;"></div>
 <div class="scrollable-content">

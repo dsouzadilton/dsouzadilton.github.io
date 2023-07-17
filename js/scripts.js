@@ -120,16 +120,6 @@
     $(".portfolio-filter-menu li").removeClass("active");
     $(this).addClass("active");
   });
-  $(".portfolio").each(function () {
-    // the containers for all your galleries
-    $(this).magnificPopup({
-      delegate: ".portfolio-popup", // the selector for portfolio item
-      type: "image",
-      gallery: {
-        enabled: true,
-      },
-    });
-  });
 })(jQuery);
 var TxtRotate = function (el, toRotate, period) {
   this.toRotate = toRotate;

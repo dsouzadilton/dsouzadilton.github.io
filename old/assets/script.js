@@ -1,12 +1,17 @@
 const sectionEls = document.querySelectorAll('.section');
 const navEls = document.querySelectorAll('.navlink');
 console.log(sectionEls);
+sectionEls.forEach(sectionEl => {
+        console.log(sectionEl.id);
+    
+});
+
 console.log(navEls);
-let currentSection = 'about';
+let currentSection = '';
 
 window.addEventListener('scroll',()=>{
     sectionEls.forEach(sectionEl => {
-        if(window.scrollY >= sectionEl.offsetTop -200){
+        if(window.scrollY >= sectionEl.offsetTop-100){
             currentSection = sectionEl.id;
         }
     });
