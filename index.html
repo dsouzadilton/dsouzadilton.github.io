@@ -193,6 +193,7 @@ a:hover{
 p{
     color: grey;
 }
+
 @media only screen and (max-width: 769px){
     .profilepic{
     height: 350px;
@@ -204,14 +205,17 @@ p{
 .navlink{
         color: #ff8c05;
     }
-    .active{
-        color: #f3ca2f;
-        border-bottom: 1px solid white;
-    }
+    
     .portfolio-filter-menu ul{
         margin: 10px;
         padding: 0px;
         border-bottom: 1px solid white;
+    }
+    .portfolio-filter-menu ul li{
+        font-size: 16px;
+    }
+    .title-uppercase{
+        margin-bottom: 20px;
     }
 }
 
@@ -243,14 +247,12 @@ p{
         list-style: none;
         margin: 0px 10px;
         font-size: 26px;
-    }
-    .navlink{
-        color: #ff8c05;
-    }
-    .notice{
+    }    .notice{
         display: none;
     }
-    
+    .navactive{
+        color: #f3ca2f;
+    } 
 }
 
 </style>
@@ -261,7 +263,7 @@ p{
 
 <div class="click-capture"></div>
 
-<div class="menu" style="width: 40%;">
+<div class="menu" style="width: 60%;">
 <span class="close-menu icon-cross2 right-boxed"></span>
 <ul class="menu-list right-boxed" style="height: fit-content;">
 <li data-menuanchor="hero">
@@ -287,9 +289,11 @@ p{
 </ul>
 <div class="menu-footer right-boxed">
 <div class="social-list">
-<a href="#" class="icon ion-social-twitter"></a>
-<a href="#" class="icon ion-social-instagram"></a>
-<a href="#" class="fa fa-skype"></a>
+    <a href="https://www.linkedin.com/in/diltondsouza" target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://www.github.com/dsouzadilton"  target="_blank" class="fa fa-github"></a>
+    <a href="mailto:diltondsouza1@gmail.com" class="fa fa-envelope"></a>
+<a href="https://www.twitter.com/DiltonDsouza"  target="_blank" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/dilton.dsouza"  target="_blank" class="fa fa-instagram"></a>
 </div>
 
 </div>
@@ -324,7 +328,7 @@ p{
             <a href="#page2" class="navlink">Resume</a>
             </li>
             <li data-menuanchor="hero">
-                <a href="#page1" class="navlink active" >Home</a>
+                <a href="#page1" class="navlink navactive" >Home</a>
                 </li>
                 <a class="brand" href="">
                     <img class="brand-img" alt="" src="images/brand.png">
@@ -338,11 +342,11 @@ p{
 </div>
 <div class="copy-bottom white boxed">© Dilton 2023.</div>
 <div class="social-list social-list-bottom boxed">
-    <a href="#" class="fa fa-linkedin"></a>
-    <a href="#" class="fa fa-github"></a>
-<a href="#" class="fa fa-tumblr"></a>
-<a href="#" class="fa fa-codepen"></a>
-<a href="#" class="fa fa-medium"></a>
+    <a href="mailto:diltondsouza1@gmail.com" class="fa fa-envelope"></a>
+    <a href="https://www.linkedin.com/in/diltondsouza"  target="_blank" class="fa fa-linkedin"></a>
+    <a href="https://www.github.com/dsouzadilton" target="_blank"  class="fa fa-github"></a>
+<a href="https://www.twitter.com/DiltonDsouza"  target="_blank" class="fa fa-twitter"></a>
+<a href="https://www.instagram.com/dilton.dsouza"  target="_blank" class="fa fa-instagram"></a>
 </div>
 <div class="pagepiling">
 <div data-anchor="hero" class="pp-scrollable text-white section section-1" id="page1">
@@ -503,7 +507,7 @@ p{
 <p style="color: #f3ca2f;">Git and Github, React, Node JS, NoSQL</p>
 
 <p style="margin-bottom: 0px;">Familiarity</p>
-<p style="color: #f3ca2f;">Typescript, Django, Shell scripting
+<p style="color: #f3ca2f;">Typescript, Django, Shell scripting, Linux OS, Computer Networking
 </p>
 </div>
 </div>
@@ -566,7 +570,7 @@ p{
                     </li>
                 </ul>
             </div>
-            <p class="notice" style="text-align: center;">Click on the image cards for details.</p>
+            <p class="notice" style="text-align: center;color: white;margin-bottom: 20px;">Click on the image cards for details.</p>
             
             <div class="row no-gutters filtr-container">
                 <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2, 5">
@@ -584,7 +588,7 @@ p{
                             </div>
                             <a href="project-detail.html" class="portfolio-popup">
                                 <div class="subtitle">
-                                    <span>More Details</span>
+                                    <span><i class="fa fa-link"></i> More Details</span>
                                 </div></a> 
                         </div>
                     
@@ -606,7 +610,7 @@ p{
                             </div>
                             <a href="project-detail.html" class="portfolio-popup">
                                 <div class="subtitle">
-                                    <span>More Details</span>
+                                    <span><i class="fa fa-link"></i> More Details</span>
                                 </div></a> 
                         </div>
                     
@@ -627,7 +631,7 @@ p{
                                 </div>
                                 <a href="project-detail.html" class="portfolio-popup">
                                     <div class="subtitle">
-                                        <span>More Details</span>
+                                        <span><i class="fa fa-link"></i> More Details</span>
                                     </div></a> 
                             </div>
                         
@@ -648,7 +652,7 @@ p{
                             </div>
                             <a href="project-detail.html" class="portfolio-popup">
                                 <div class="subtitle">
-                                    <span>More Details</span>
+                                    <span><i class="fa fa-link"></i> More Details</span>
                                 </div></a> 
                         </div>
                     
@@ -671,7 +675,7 @@ p{
                             </div>
                             <a href="project-detail.html" class="portfolio-popup">
                                 <div class="subtitle">
-                                    <span>More Details</span>
+                                    <span><i class="fa fa-link"></i> More Details</span>
                                 </div></a> 
                         </div>
                     
@@ -693,7 +697,7 @@ p{
                             </div>
                             <a href="project-detail.html" class="portfolio-popup">
                                 <div class="subtitle">
-                                    <span>More Details</span>
+                                    <span><i class="fa fa-link"></i> More Details</span>
                                 </div></a> 
                         </div>
                     
@@ -811,15 +815,14 @@ p{
 <div class="row">
 <div class="col-md-6">
 <h2 class="title-uppercase" style="text-transform: none;"><br><i class="fa fa-map-marker"></i><span class="text-primary"> Mumbai</span><br>India</h2>
-<br><br><br><h5 class="text-muted" style="margin-bottom: 10px;">Connect with me</h5>
-<a href="" class="fa fa-twitter"  style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
-<a href="" class="fa fa-instagram" style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
-<a href="" class="fa fa-quora" style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
-<a href="" class="fa fa-tumblr" style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
-<a href="" class="fa fa-skype" style="font-size: 36px;background-color: gr;color: gray;"></a>
-<a href="" class="fa fa-fac" style="font-size: 36px;background-color: gr;color: gray;"></a>
-<section class="contact-address">
-</section>
+<br><br><h5 class="text-muted" style="margin-bottom: 10px;">Connect with me</h5>
+<p><a href="mailto:diltondsouza1@gmail.com"style="color: gray;font-size: 18px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><i  class="fa fa-envelope" ></i> diltondsouza1@gmail.com</a>
+</p>
+<a href="https://www.linkedin.com/in/diltondsouza" target="_blank" class="fa fa-linkedin"  style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
+<a href="https://www.github.com/dsouzadilton" target="_blank" class="fa fa-github" style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
+<a href="https://www.twitter.com/DiltonDsouza" target="_blank" class="fa fa-twitter"  style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
+<a href="https://www.instagram.com/dilton.dsouza" target="_blank" class="fa fa-instagram" style="font-size: 36px;background-color: gr;color: gray;margin-right: 15px;"></a>
+
 </div>
 <div class="col-md-6">
 <div class="contact-info">
