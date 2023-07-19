@@ -24,28 +24,20 @@
     h1, h5{
         color: #f3ca2f;
     }
-    hr{
-        background-color: gray;
-        height: 1px;
-        width:60%;
-    }
+    
     a:hover{
         color: #f3ca2f;
         text-decoration: none;
     }
     
-    body{
-        margin: 0px;
-        padding: 0px;
-    }
     project-detail-text{
         width: 400px;
     }
-    section{
-        border-top: 1px solid grey;
-        margin-top:40px;
-        padding:10px;
-    }
+    
+   section{
+       margin-top: 40px;
+   }
+    
     @media screen and  (min-width:769px) {
         h1, .project-detail-text{
             padding-left: 100px;
@@ -54,13 +46,26 @@
         .project-detail-text{
             width:600px;
         }
-        section{
-            margin-top: 0px;
+       body {
+  padding: 0%;
+  margin: 0%;
+  overflow-y:hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+} 
+section{border-top: 1px solid grey;
+            margin-top: 40px;
         padding:100px;
         height: 100vh;
         
     }
+    
     }
+    
 </style>
 </head>
 <body>
@@ -136,7 +141,8 @@
                 <div class="row row-project">
                 <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
                 <h1>PyCov-19</h1>
-                <p class="project-detail-text" style="color: grey;font-size: 18px;">A system that monitors live surveilliance video feed to detect 2-wheeler vehicle riders not wearing a helmet. The system extracts the vehicle's license plate data using OCR if the rider is not wearing a helmet.</p>
+                <p class="project-detail-text" style="color: grey;font-size: 18px;">A web scraping tool that retrieves centire covid-19 statistics such as active cases, deaths, vaccines, etc of any country. Provides voice command and audio feedback assistance for the visually impaired. User can also set a timer to recieve real-time time notifications with the app running in the background.
+                    </p>
                 </div>
                 <div class="col-project-info col-md-6">
                 <div class="row">
@@ -151,7 +157,7 @@
                 </div>
                 <div class="col-md-6 mt-5">
                 <h5>Technologies</h5>
-                <p> Python, PyAudio, Text to speech, speech recognition</p>
+                <p> Python, PyAudio, Text to speech, speech recognition, Windows toast notifications.</p>
                 </div>
                 <div class="col-md-6 mt-5">
                 <h5>Links</h5>
@@ -167,23 +173,23 @@
                 <section id="health-monitoring-system" >
                     <div class="row row-project">
                     <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
-                    <h1>Student Analysis<br>Portal</h1>
-                    <p class="project-detail-text" style="color: grey;font-size: 18px;">A system that monitors live surveilliance video feed to detect 2-wheeler vehicle riders not wearing a helmet. The system extracts the vehicle's license plate data using OCR if the rider is not wearing a helmet.</p>
+                    <h1>Health Monitoring<br>System</h1>
+                    <p class="project-detail-text" style="color: grey;font-size: 18px;">An IoT based system that monitors user's health by measuring various health parameters such as body temperature, pulse rate and blood oxygen level (SpO2). This data is shared on the user's smartphone screen in real time. Employs a presence based system activation using an ultrasonic sensor.</p>
                     </div>
                     <div class="col-project-info col-md-6">
                     <div class="row">
                     <div class="col-md-6 mt-5">
                     <h5>Domain</h5>
-                    <p>Full stack web development, Website, NoSQl</p>
+                    <p>IoT, Node MCU</p>
                     </div>
                     <div class="col-md-6 mt-5">
                     <h5>Team</h5>
-                    <p>Natasha, Nigel, Jevin
+                    <p>Nigel, Ananya
                     </p>
                     </div>
                     <div class="col-md-6 mt-5">
                     <h5>Technologies</h5>
-                    <p>PHP, MongoDB, Xampp, VS Code, Mongo Atlas, Compass</p>
+                    <p>Arduino IDE, Blynk, CP1202 drivers</p>
                     </div>
                     <div class="col-md-6 mt-5">
                     <h5>Links</h5>
@@ -199,14 +205,14 @@
                     <section id="next-door-hub" >
                         <div class="row row-project">
                         <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
-                        <h1>Student Analysis<br>Portal</h1>
-                        <p class="project-detail-text" style="color: grey;font-size: 18px;">A system that monitors live surveilliance video feed to detect 2-wheeler vehicle riders not wearing a helmet. The system extracts the vehicle's license plate data using OCR if the rider is not wearing a helmet.</p>
+                        <h1>Next Door<br>Hub</h1>
+                        <p class="project-detail-text" style="color: grey;font-size: 18px;">Next door hub is an online auction system developed in Eclipse IDE. Employs MySQl as the backend database.</p>
                         </div>
                         <div class="col-project-info col-md-6">
                         <div class="row">
                         <div class="col-md-6 mt-5">
                         <h5>Domain</h5>
-                        <p>Full stack web development, Website, NoSQl</p>
+                        <p>Full stack web development, Website</p>
                         </div>
                         <div class="col-md-6 mt-5">
                         <h5>Team</h5>
@@ -215,7 +221,7 @@
                         </div>
                         <div class="col-md-6 mt-5">
                         <h5>Technologies</h5>
-                        <p>PHP, MongoDB, Xampp, VS Code, Mongo Atlas, Compass</p>
+                        <p>Java Server Pages, Eclipse IDE, MySQL, Xampp</p>
                         </div>
                         <div class="col-md-6 mt-5">
                         <h5>Links</h5>
@@ -231,23 +237,23 @@
                         <section id="course-scheduler" >
                             <div class="row row-project">
                             <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
-                            <h1>Student Analysis<br>Portal</h1>
-                            <p class="project-detail-text" style="color: grey;font-size: 18px;">A system that monitors live surveilliance video feed to detect 2-wheeler vehicle riders not wearing a helmet. The system extracts the vehicle's license plate data using OCR if the rider is not wearing a helmet.</p>
+                            <h1>Course Scheduler</h1>
+                            <p class="project-detail-text" style="color: grey;font-size: 18px;">Python script that generates schedule on the basis of pre-specified rules and inputs given such as room capacity, courses. professor availabilty, number of enrolled students in each course, etc. Handles conflicts such as invalid courses, rooms unavailibility, timing clashes, etc. </p>
                             </div>
                             <div class="col-project-info col-md-6">
                             <div class="row">
                             <div class="col-md-6 mt-5">
                             <h5>Domain</h5>
-                            <p>Full stack web development, Website, NoSQl</p>
+                            <p>Python Script, software, Agile Development</p>
                             </div>
                             <div class="col-md-6 mt-5">
                             <h5>Team</h5>
-                            <p>Natasha, Nigel, Jevin
+                            <p>Self
                             </p>
                             </div>
                             <div class="col-md-6 mt-5">
                             <h5>Technologies</h5>
-                            <p>PHP, MongoDB, Xampp, VS Code, Mongo Atlas, Compass</p>
+                            <p>Python 3.8</p>
                             </div>
                             <div class="col-md-6 mt-5">
                             <h5>Links</h5>

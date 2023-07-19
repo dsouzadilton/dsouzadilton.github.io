@@ -180,30 +180,3 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 // porfolio filterizr
-const sectionEls = document.querySelectorAll('.section');
-const navEls = document.querySelectorAll('.navlink');
-console.log(sectionEls);
-sectionEls.forEach(sectionEl => {
-        console.log(sectionEl.id);
-    
-});
-
-console.log(navEls);
-let currentSection = 'page1';
-console.log(currentSection);
-window.addEventListener('scroll',()=>{
-    sectionEls.forEach(sectionEl => {
-        if(window.scrollY >= sectionEl.offsetTop-100){
-            currentSection = sectionEl.id;
-            console.log(currentSection);
-        }
-    });
-
-    navEls.forEach(navEl => {
-        if(navEl.href.includes(currentSection)){
-            document.querySelector('.navactive').classList.remove('navactive');
-            navEl.classList.add('navactive');
-        }
-    });
-
-});
