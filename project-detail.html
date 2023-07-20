@@ -11,7 +11,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-<title>Dilton - project Details</title>
+<title>Dilton - Project Details</title>
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i&amp;display=swap" rel="stylesheet">
@@ -30,46 +30,47 @@
         text-decoration: none;
     }
     
-    project-detail-text{
-        width: 400px;
-    }
     body{
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
-   section{
-       margin-top: 80px;
+    section{
+       margin-top: 100px;
        padding:10px;
-       padding-top: 50px;
+       padding-top: 80px;
+       height: fit-content;
+       overflow-x: hidden;
        height: 100vh;
-       overflow-y: scroll;
-   }
-    
+    }
+    p a{
+        color: gray;
+    }
     @media screen and  (min-width:769px) {
         h1, .project-detail-text{
             padding-left: 100px;
             
         }
-        .project-detail-text{
-            width:600px;
+        body {
+            padding: 0%;
+            margin: 0%;
+            overflow-y:hidden;
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
         }
-       body {
-  padding: 0%;
-  margin: 0%;
-  overflow-y:hidden;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
 
-body::-webkit-scrollbar {
-  display: none;
-} 
-section{border-top: 1px solid grey;
-            margin-top: 40px;
-        padding:100px;
-        height: 100vh;
-        
-    }
-    
+        body::-webkit-scrollbar {
+            display: none;
+        } 
+        section{
+            border-top: 1px solid grey;
+            margin-top: 60px;
+            padding:100px auto;
+            height: 100vh;
+            overflow-y: hidden;
+        }
+        .project-detail-text{
+            width:fit-content;
+        }
     }
     
 </style>
@@ -78,8 +79,7 @@ section{border-top: 1px solid grey;
 
 <div style="position: fixed;top:0px;left:0px;padding: 20px;color: gray;width: 100%;background-color: black;z-index: 101;"><a href="/index.html#page3" style="color: gray;font-size: 18px;">&lt; Go Back </a></div>
     
-    
-        <section id="project-third-eye" >
+    <section id="project-third-eye" >
         <div class="row row-project">
         <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
         <h1>Project Third<br>Eye</h1>
@@ -110,8 +110,9 @@ section{border-top: 1px solid grey;
             </div>
         </div>
         </div>
-        </div></section>
-        <section id="student-analysis-portal" >
+        </div>
+    </section>
+    <section id="student-analysis-portal" >
             <div class="row row-project">
             <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
             <h1>Student Analysis<br>Portal</h1>
@@ -142,141 +143,140 @@ section{border-top: 1px solid grey;
                 </div>
             </div>
             </div>
-            </div></section>
-            <section id="py-cov19" >
-                <div class="row row-project">
-                <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
-                <h1>PyCov-19</h1>
-                <p class="project-detail-text" style="color: grey;font-size: 18px;">A web scraping tool that retrieves centire covid-19 statistics such as active cases, deaths, vaccines, etc of any country. Provides voice command and audio feedback assistance for the visually impaired. User can also set a timer to recieve real-time time notifications with the app running in the background.
-                    </p>
-                </div>
-                <div class="col-project-info col-md-6">
-                <div class="row">
-                <div class="col-md-6 mt-5">
-                <h5>Domain</h5>
-                <p>Web-scraping, software</p>
-                </div>
-                <div class="col-md-6 mt-5">
-                <h5>Team</h5>
-                <p>Self 
-                </p>
-                </div>
-                <div class="col-md-6 mt-5">
-                <h5>Technologies</h5>
-                <p> Python, PyAudio, Text to speech, speech recognition, Windows toast notifications.</p>
-                </div>
-                <div class="col-md-6 mt-5">
-                <h5>Links</h5>
-                <p>-</p>
-                </div>
-                <div class="col-md-6 mt-5">
-                    <h5>Type</h5>
-                    <p>Academic</p>
-                    </div>
-                </div>
-                </div>
-                </div></section>
-                <section id="health-monitoring-system" >
-                    <div class="row row-project">
-                    <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
-                    <h1>Health Monitoring<br>System</h1>
-                    <p class="project-detail-text" style="color: grey;font-size: 18px;">An IoT based system that monitors user's health by measuring various health parameters such as body temperature, pulse rate and blood oxygen level (SpO2). This data is shared on the user's smartphone screen in real time. Employs a presence based system activation using an ultrasonic sensor.</p>
-                    </div>
-                    <div class="col-project-info col-md-6">
-                    <div class="row">
-                    <div class="col-md-6 mt-5">
-                    <h5>Domain</h5>
-                    <p>IoT, Node MCU</p>
-                    </div>
-                    <div class="col-md-6 mt-5">
-                    <h5>Team</h5>
-                    <p>Nigel, Ananya
-                    </p>
-                    </div>
-                    <div class="col-md-6 mt-5">
-                    <h5>Technologies</h5>
-                    <p>Arduino IDE, Blynk, CP1202 drivers</p>
-                    </div>
-                    <div class="col-md-6 mt-5">
-                    <h5>Links</h5>
-                    <p>-</p>
-                    </div>
-                    <div class="col-md-6 mt-5">
-                        <h5>Type</h5>
-                        <p>Academic</p>
-                        </div>
-                    </div>
-                    </div>
-                    </div></section>
-                    <section id="next-door-hub" >
-                        <div class="row row-project">
-                        <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
-                        <h1>Next Door<br>Hub</h1>
-                        <p class="project-detail-text" style="color: grey;font-size: 18px;">Next door hub is an online auction system developed in Eclipse IDE. Employs MySQl as the backend database.</p>
-                        </div>
-                        <div class="col-project-info col-md-6">
-                        <div class="row">
-                        <div class="col-md-6 mt-5">
-                        <h5>Domain</h5>
-                        <p>Full stack web development, Website</p>
-                        </div>
-                        <div class="col-md-6 mt-5">
-                        <h5>Team</h5>
-                        <p>Natasha, Nigel, Jevin
-                        </p>
-                        </div>
-                        <div class="col-md-6 mt-5">
-                        <h5>Technologies</h5>
-                        <p>Java Server Pages, Eclipse IDE, MySQL, Xampp</p>
-                        </div>
-                        <div class="col-md-6 mt-5">
-                        <h5>Links</h5>
-                        <p>-</p>
-                        </div>
-                        <div class="col-md-6 mt-5">
-                            <h5>Type</h5>
-                            <p>Academic</p>
-                            </div>
-                        </div>
-                        </div>
-                        </div></section>
-                        <section id="course-scheduler" >
-                            <div class="row row-project">
-                            <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
-                            <h1>Course Scheduler</h1>
-                            <p class="project-detail-text" style="color: grey;font-size: 18px;">Python script that generates schedule on the basis of pre-specified rules and inputs given such as room capacity, courses. professor availabilty, number of enrolled students in each course, etc. Handles conflicts such as invalid courses, rooms unavailibility, timing clashes, etc. </p>
-                            </div>
-                            <div class="col-project-info col-md-6">
-                            <div class="row">
-                            <div class="col-md-6 mt-5">
-                            <h5>Domain</h5>
-                            <p>Python Script, software, Agile Development</p>
-                            </div>
-                            <div class="col-md-6 mt-5">
-                            <h5>Team</h5>
-                            <p>Self
-                            </p>
-                            </div>
-                            <div class="col-md-6 mt-5">
-                            <h5>Technologies</h5>
-                            <p>Python 3.8</p>
-                            </div>
-                            <div class="col-md-6 mt-5">
-                            <h5>Links</h5>
-                            <p>-</p>
-                            </div>
-                            <div class="col-md-6 mt-5">
-                                <h5>Type</h5>
-                                <p>Academic</p>
-                                </div>
-                            </div>
-                            </div>
-                            </div></section>
+            </div>
+    </section>
+    <section id="py-cov19" >
+        <div class="row row-project">
+        <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
+        <h1>PyCov-19</h1>
+        <p class="project-detail-text" style="color: grey;font-size: 18px;">A web scraping tool that retrieves centire covid-19 statistics such as active cases, deaths, vaccines, etc of any country. Provides voice command and audio feedback assistance for the visually impaired. User can also set a timer to recieve real-time time notifications with the app running in the background.
+            </p>
+        </div>
+        <div class="col-project-info col-md-6">
+        <div class="row">
+        <div class="col-md-6 mt-5">
+        <h5>Domain</h5>
+        <p>Web-scraping, software</p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Team</h5>
+        <p>Self 
+        </p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Technologies</h5>
+        <p> Python, PyAudio, Text to speech, speech recognition, Windows toast notifications.</p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Links</h5>
+        <p><a href="https://github.com/dsouzadilton/PyCov-19">&gt; Github Repository</a></p>
+        </div>
+        <div class="col-md-6 mt-5">
+            <h5>Type</h5>
+            <p>Academic</p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="health-monitoring-system" >
+        <div class="row row-project">
+        <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
+        <h1>Health Monitoring<br>System</h1>
+        <p class="project-detail-text" style="color: grey;font-size: 18px;">An IoT based system that monitors user's health by measuring various health parameters such as body temperature, pulse rate and blood oxygen level (SpO2). This data is shared on the user's smartphone screen in real time. Employs a presence based system activation using an ultrasonic sensor.</p>
+        </div>
+        <div class="col-project-info col-md-6">
+        <div class="row">
+        <div class="col-md-6 mt-5">
+        <h5>Domain</h5>
+        <p>IoT, Node MCU</p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Team</h5>
+        <p>Nigel, Ananya
+        </p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Technologies</h5>
+        <p>Arduino IDE, Blynk, CP1202 drivers</p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Links</h5>
+        <p><a href="https://github.com/dsouzadilton/Health-Monitoring-System-IoT">&gt; Github Repository</a></p>
+        </div>
+        <div class="col-md-6 mt-5">
+            <h5>Type</h5>
+            <p>Academic</p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="next-door-hub" >
+        <div class="row row-project">
+        <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
+        <h1>Next Door<br>Hub</h1>
+        <p class="project-detail-text" style="color: grey;font-size: 18px;">Next door hub is an online auction system developed in Eclipse IDE. Employs MySQl as the backend database.</p>
+        </div>
+        <div class="col-project-info col-md-6">
+        <div class="row">
+        <div class="col-md-6 mt-5">
+        <h5>Domain</h5>
+        <p>Full stack web development, Website</p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Team</h5>
+        <p>Natasha, Nigel, Jevin
+        </p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Technologies</h5>
+        <p>Java Server Pages, Eclipse IDE, MySQL, Xampp</p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Links</h5>
+        <p><a href="https://github.com/dsouzadilton/Online-Auction-System">&gt; Github Repository</a></p>
+        </div>
+        <div class="col-md-6 mt-5">
+            <h5>Type</h5>
+            <p>Academic</p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="course-scheduler" >
+        <div class="row row-project">
+        <div class="col-project-name col-md-6  mt-5 mb-5 mb-md-0">
+        <h1>Course Scheduler</h1>
+        <p class="project-detail-text" style="color: grey;font-size: 18px;">Python script that generates schedule on the basis of pre-specified rules and inputs given such as room capacity, courses. professor availabilty, number of enrolled students in each course, etc. Handles conflicts such as invalid courses, rooms unavailibility, timing clashes, etc. </p>
+        </div>
+        <div class="col-project-info col-md-6">
+        <div class="row">
+        <div class="col-md-6 mt-5">
+        <h5>Domain</h5>
+        <p>Python Script, software, Agile Development</p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Team</h5>
+        <p>Self
+        </p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Technologies</h5>
+        <p>Python 3.8</p>
+        </div>
+        <div class="col-md-6 mt-5">
+        <h5>Links</h5>
+        <p><a href="https://github.com/dsouzadilton/Course-Scheduling-System">&gt; Github Repository</a></p>
+        </div>
+        <div class="col-md-6 mt-5">
+            <h5>Type</h5>
+            <p>Academic</p>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
 </body>
-        
-
-
-
-
-
 </html>

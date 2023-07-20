@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +20,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-    .progress{
-        margin-bottom: 20px;
-    }
-    body {
+.progress{
+    margin-bottom: 20px;
+}
+body {
     overscroll-behavior: contain;
 }
 a:hover{
@@ -196,9 +195,12 @@ p{
 }
 .navlink{
         color: #ff8c05;
-    }
+}
+.profilepic{
+    border: 1px solid;box-shadow: 8px 10px gray;float: left;margin: 50px 40px 0px 20px;
+}
 @media only screen and (max-width: 767px){
-    .profilepic{
+.profilepic{
     height: 350px;
     display: block;
 }
@@ -206,23 +208,23 @@ p{
     display: none;
 }
     
-    .portfolio-filter-menu ul{
-        margin: 10px;
-        padding: 0px;
-        border-bottom: 1px solid white;
-    }
-    .portfolio-filter-menu ul li{
-        font-size: 16px;
-    }
-    .title-uppercase{
-        margin-bottom: 20px;
-    }
+.portfolio-filter-menu ul{
+    margin: 10px;
+    padding: 0px;
+    border-bottom: 1px solid white;
+}
+.portfolio-filter-menu ul li{
+    font-size: 16px;
+}
+.title-uppercase{
+    margin-bottom: 20px;
+}
 }
 
 @media only screen and (min-width: 768px){
     .profilepic{
         height: 400px;
-        margin-top: 100px;
+        margin-top: 80px;
     }
     .navbar{display: none;}
     .new-navbar{
@@ -255,131 +257,131 @@ p{
     } 
     
 }
-
 </style>
 </head>
 <body>
 <div class="animsition">
-<div class="loader"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>
 
+<div class="loader"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>
 <div class="click-capture"></div>
 
+<!-- Menu for smaller screens -->
 <div class="menu" style="width: 60%;">
-<span class="close-menu icon-cross2 right-boxed"></span>
-<ul class="menu-list right-boxed" style="height: fit-content;">
-<li data-menuanchor="hero">
-<a href="#page1" class="navlink">Home</a>
-</li>
-<li data-menuanchor="resume">
-<a href="#page2" class="navlink">Resume</a>
-</li>
-<li data-menuanchor="project">
-<a href="#page3" class="navlink">Projects</a>
-</li>
-<li data-menuanchor="contact">
-<a href="#page4" class="navlink">Contact</a>
-</li>
-<!--
-<li data-menuanchor="page6">
-<a href="#page5">Projects</a>
-</li>
-<li data-menuanchor="page7">
-<a href="#page6">Contact</a>
-</li>
--->
-</ul>
-<div class="menu-footer right-boxed">
-<div class="social-list">
-    <a href="https://www.linkedin.com/in/diltondsouza" target="_blank" class="fa fa-linkedin"></a>
-    <a href="https://www.github.com/dsouzadilton"  target="_blank" class="fa fa-github"></a>
-    <a href="mailto:diltondsouza1@gmail.com" class="fa fa-envelope"></a>
-<a href="https://www.twitter.com/DiltonDsouza"  target="_blank" class="fa fa-twitter"></a>
-<a href="https://www.instagram.com/dilton.dsouza"  target="_blank" class="fa fa-instagram"></a>
+    <span class="close-menu icon-cross2 right-boxed"></span>
+    <ul class="menu-list right-boxed" style="height: fit-content;">
+        <li data-menuanchor="hero">
+        <a href="#page1" class="navlink">Home</a>
+        </li>
+        <li data-menuanchor="resume">
+        <a href="#page2" class="navlink">Resume</a>
+        </li>
+        <li data-menuanchor="project">
+        <a href="#page3" class="navlink">Projects</a>
+        </li>
+        <li data-menuanchor="contact">
+        <a href="#page4" class="navlink">Contact</a>
+        </li>
+    </ul>
+    <div class="menu-footer right-boxed">
+    <div class="social-list">
+        <a href="https://www.linkedin.com/in/diltondsouza" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.github.com/dsouzadilton"  target="_blank" class="fa fa-github"></a>
+        <a href="mailto:diltondsouza1@gmail.com" class="fa fa-envelope"></a>
+        <a href="https://www.twitter.com/DiltonDsouza"  target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/dilton.dsouza"  target="_blank" class="fa fa-instagram"></a>
+    </div>
+    </div>
 </div>
 
-</div>
-</div>
 
 <header class="navbar boxed" style="background-color: #272727;">
-<a class="brand" href="">
-<img class="brand-img" alt="" src="images/brand.png">
-<div class="brand-info">
-<div class="brand-name">Dilton's</div>
-<div class="brand-text">developer profile</div>
-</div><div><a href="mailto:diltondsouza1@gmail.com" style="font-size: 14px;color: grey;float: right;margin-bottom: 10px;">diltondsouza1@gmail.com</a></div>
-</a>
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" style="clear: both;">
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
+    <a class="brand" href="">
+        <img class="brand-img" alt="" src="images/brand.png">
+        <div class="brand-info">
+        <div class="brand-name">Dilton's</div>
+        <div class="brand-text">developer profile</div>
+        </div>
+        <div><a href="mailto:diltondsouza1@gmail.com" style="font-size: 14px;color: grey;float: right;margin-bottom: 10px;">diltondsouza1@gmail.com</a></div>
+    </a>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" style="clear: both;">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
 </header>
 
+<!-- Navbar for larger screens -->
 <div class="new-navbar">
-    
-        <ul class="new-navbar" style="height: fit-content;">
-            <li data-menuanchor="contact">
-                <a href="#page4"  class="navlink ">Contact</a>
-                </li>
-                <li data-menuanchor="project">
-                    <a href="#page3" class="navlink ">Projects</a>
-                    </li>
-            <li data-menuanchor="resume">
-            <a href="#page2" class="navlink">Resume</a>
-            </li>
-            <li data-menuanchor="hero">
-                <a href="#page1" class="navlink" >Home</a>
-                </li>
-                <a class="brand" href="">
-                    <img class="brand-img" alt="" src="images/brand.png">
-                    <div class="brand-info">
-                    <div class="brand-name">Dilton's</div>
-                    <div class="brand-text">developer profile</div>
-                    </div>
-                    </a> <div class="brand" style="font-size: 26px;">| <a href="mailto:diltondsouza1@gmail.com" style="font-size: 16px;color: grey;">diltondsouza1@gmail.com</a> </div>
-            </ul>
+    <ul class="new-navbar" style="height: fit-content;">
+        <li data-menuanchor="contact">
+        <a href="#page4"  class="navlink ">Contact</a>
+        </li>
+        <li data-menuanchor="project">
+        <a href="#page3" class="navlink ">Projects</a>
+        </li>
+        <li data-menuanchor="resume">
+        <a href="#page2" class="navlink">Resume</a>
+        </li>
+        <li data-menuanchor="hero">
+        <a href="#page1" class="navlink" >Home</a>
+        </li>
+        <a class="brand" href="">
+            <img class="brand-img" alt="" src="images/brand.png">
+            <div class="brand-info">
+            <div class="brand-name">Dilton's</div>
+            <div class="brand-text">developer profile</div>
+            </div>
+        </a>
+        <div class="brand" style="font-size: 26px;">| <a href="mailto:diltondsouza1@gmail.com" style="font-size: 16px;color: grey;">diltondsouza1@gmail.com</a> </div>
+    </ul>
 </div>
+
+<!-- Footer -->
 <div class="copy-bottom white boxed">© Dilton 2023.</div>
 <div class="social-list social-list-bottom boxed">
     <a href="mailto:diltondsouza1@gmail.com" class="fa fa-envelope"></a>
     <a href="https://www.linkedin.com/in/diltondsouza"  target="_blank" class="fa fa-linkedin"></a>
     <a href="https://www.github.com/dsouzadilton" target="_blank"  class="fa fa-github"></a>
-<a href="https://www.twitter.com/DiltonDsouza"  target="_blank" class="fa fa-twitter"></a>
-<a href="https://www.instagram.com/dilton.dsouza"  target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.twitter.com/DiltonDsouza"  target="_blank" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/dilton.dsouza"  target="_blank" class="fa fa-instagram"></a>
 </div>
+
 <div class="pagepiling">
+
+<!-- Page 1 - Home -->
 <div data-anchor="hero" class="pp-scrollable text-white section section-1" id="page1">
 <div class="scroll-wrap">
-<div class="section-bg" style="background-color: gr;"></div>
+<div class="section-bg"></div>
 <div class="scrollable-content">
 <div class="vertical-centred">
 <div class="boxed boxed-inner">
 <div class="vertical-title d-none d-lg-block"><span></span></div>
+<div class="boxed">
+    <img class="profilepic" src="/images/bg/dilton.jpeg" alt="" title="Dilton D'souza">
+    <div class="container">
+    <div class="intro">
+    <div class="row">
+        <div class="col-md-8 col-lg-6">
+            <p class="subtitle-top"></p>
+        <h1 class="display-2 text-white" style="text-transform: none;"><span class="text-primary">Hello</span><br>I'm Dilton.</h1>
+        <br>
+        <p class="subtitle-top" style="margin-bottom: 25px;">I'm a <span class="txt-rotate" data-period="2000" data-rotate='[ "Developer.", "Designer.", "Innovator", "Analyst"]' style="background-color: yellow;padding:5px;color:black"></span></p>
+        <span>
+        <a href="https://www.linkedin.com/in/diltondsouza"  target="_blank" class=" fa fa-linkedin" style="font-size: 38px;background-color: gray;color: #272727;padding:5px;border-radius:5px;"></a>
+        <a href="https://www.github.com/dsouzadilton" target="_blank" class="fa fa-github" style="font-size: 38px;background-color: gray;color: #272727;padding:5px;margin-left: 10px;margin-bottom: 10px;border-radius: 5px;"></a><br> <a href="/assets/Dilton-Resume.pdf" download="Dilton-Resume.pdf" style="font-size: 18px;color:#ff8c05;">&gt; Download Resume <i class="fa fa-download"></i></a></span>
+        </div>
+        <p style="color: grey;">I'm a computer engineering graduate fresher with a passion for software and web development. My interest also lies in the field of IoT, Machine learning, Data Science and Data analysis. Throughout my undergraduate coursework, I learnt various technologies and developed my skill set. I have implemented and strengthened these skills through different projects. I am looking for opportunities where I can showcase my skills and gain experience.</p>
+    </div>
+    </div>
+    </div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
-<div class="boxed"><img class="profilepic" src="/images/bg/dilton.jpeg" alt="" style="border: 1px solid;box-shadow: 8px 10px gray;float: left;margin: 50px 40px 0px 20px;">
-
-<div class="container">
-<div class="intro">
-<div class="row">
-<div class="col-md-8 col-lg-6">
-    <p class="subtitle-top"></p>
-<h1 class="display-2 text-white" style="text-transform: none;"><span class="text-primary">Hello</span><br>I'm Dilton.</h1>
-<br><p class="subtitle-top" style="margin-bottom: 25px;">I'm a <span class="txt-rotate" data-period="2000" data-rotate='[ "Developer.", "Designer.", "Innovator", "Analyst"]' style="background-color: yellow;padding:5px;color:black"></span></p>
-<!--<a href="https://www.youtube.com/watch?v=0O2aH4XLbto" class="popup-youtube icon ion-ios-play"></a>-->
-<span>
-<a href="https://www.linkedin.com/in/diltondsouza"  target="_blank" class=" fa fa-linkedin" style="font-size: 38px;background-color: gray;color: #272727;padding:5px;border-radius:5px;"></a>
-<a href="https://www.github.com/dsouzadilton" target="_blank" class="fa fa-github" style="font-size: 38px;background-color: gray;color: #272727;padding:5px;margin-left: 10px;margin-bottom: 10px;border-radius: 5px;"></a><br> <a href="/assets/Dilton-Resume.pdf" download="Dilton-Resume.pdf" style="font-size: 18px;color:#ff8c05;">&gt; Download Resume <i class="fa fa-download"></i></a></span>
-
-</div> <p style="color: grey;">I'm a computer engineering graduate fresher with a passion for software and web development. My interest also lies in the field of IoT, Machine learning, Data Science and Data analysis. Throughout my undergraduate coursework, I learnt various technologies and developed my skill set. I have implemented and strengthened these skills through different projects. I am looking for opportunities where I can showcase my skills and gain experience.</p>
-</div>
-</div>
-</div> 
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<!-- Page 2 - Resume -->
 <div data-anchor="resume" class="pp-scrollable section section-2" id="page2">
 <div class="scroll-wrap">
 <div class="scrollable-content">
@@ -581,7 +583,7 @@ p{
                             <div class="subtitle">
                                 <span>A YOLOv3 based 2-wheeler helmet detection and license plate recognition software.</span>
                             </div>
-                            <a href="project-detail.html#project-third-eye" class="portfolio-popup"  target="_blank">
+                            <a href="project-detail.html#project-third-eye" class="portfolio-popup" >
                                 <div class="subtitle">
                                     <span>&gt; More Details</span>
                                 </div></a> 
@@ -603,7 +605,7 @@ p{
                             <div class="subtitle">
                                 <span>A system that captures entire student data such as academics, projects, internships, courses, etc for better mentoring and guidance.</span>
                             </div>
-                            <a href="project-detail.html#student-analysis-portal" class="portfolio-popup"  target="_blank">
+                            <a href="project-detail.html#student-analysis-portal" class="portfolio-popup" >
                                 <div class="subtitle">
                                     <span>&gt; More Details</span>
                                 </div></a> 
@@ -624,7 +626,7 @@ p{
                                 <div class="subtitle">
                                     <span>Python webscraping tool to get Covid-19 statistics in any country.</span>
                                 </div>
-                                <a href="project-detail.html#py-cov19" class="portfolio-popup"  target="_blank">
+                                <a href="project-detail.html#py-cov19" class="portfolio-popup" >
                                     <div class="subtitle">
                                         <span>&gt; More Details</span>
                                     </div></a> 
@@ -645,7 +647,7 @@ p{
                             <div class="subtitle">
                                 <span>An IoT sytem that measures user's health parameters and shares them on user's smartphone screen in real time.</span>
                             </div>
-                            <a href="project-detail.html#health-monitoring-system" class="portfolio-popup"  target="_blank">
+                            <a href="project-detail.html#health-monitoring-system" class="portfolio-popup">
                                 <div class="subtitle">
                                     <span>&gt; More Details</span>
                                 </div></a> 
@@ -668,7 +670,7 @@ p{
                             <div class="subtitle">
                                 <span>An online auction system developed in eclipse IDE.</span>
                             </div>
-                            <a href="project-detail.html#next-door-hub" class="portfolio-popup"  target="_blank">
+                            <a href="project-detail.html#next-door-hub" class="portfolio-popup">
                                 <div class="subtitle">
                                     <span>&gt; More Details</span>
                                 </div></a> 
@@ -690,7 +692,7 @@ p{
                             <div class="subtitle">
                                 <span>A college course scheduling system written in python.</span>
                             </div>
-                            <a href="project-detail.html#course-scheduler" class="portfolio-popup"  target="_blank">
+                            <a href="project-detail.html#course-scheduler" class="portfolio-popup">
                                 <div class="subtitle">
                                     <span>&gt; More Details</span>
                                 </div></a> 
