@@ -1009,7 +1009,7 @@ a.brand:focus {
   top: -0.2rem;
 }
 .resume-study {
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 .resume-date {
   font-size: 0.9rem;
@@ -1022,7 +1022,7 @@ a.brand:focus {
   margin-bottom: 0;
 }
 .resume-row {
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 .row-partners {
   margin: -5rem -5rem 0;
