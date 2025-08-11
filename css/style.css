@@ -1003,7 +1003,7 @@ a.brand:focus {
 }
 .resume-type {
   position: relative;
-  margin: 1rem 0;
+  margin: 0;
   padding: 1rem;
   background: #272727;
   top: -0.2rem;
